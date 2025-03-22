@@ -8,7 +8,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Main Content - spans 2 columns on large screens */}
           <div className="md:col-span-2 space-y-6">
-            <section className="bg-white/5 text-gray-300 backdrop-blur-md p-6 lg:p-8 rounded-lg border border-amber-500/20">
+            <section className="bg-amber-500/20 text-gray-300 backdrop-blur-md p-6 lg:p-8 rounded-lg border border-amber-500/20">
               <h2 className="text-2xl font-semibold text-amber-400 mb-6 flex items-center">
                 <FaUniversity className="text-amber-400 mr-3" />
                 NIT Hamirpur

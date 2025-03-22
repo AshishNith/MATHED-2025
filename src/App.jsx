@@ -9,7 +9,8 @@ import Registration from './components/Registration'
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
+      <div className="min-h-screen "
+      >
         <Navbar />  
         <main className="container mx-auto ">
           <Routes>

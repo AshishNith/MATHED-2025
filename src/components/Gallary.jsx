@@ -4,7 +4,7 @@ export function FeaturedImageGallery() {
   const data = [
     {
       imgelink:
-        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "https://content.jdmagicbox.com/comp/hamirpur-himachal_pradesh/p6/9999p1972.1972.171014080006.n9p6/catalogue/nith-rec-hamirpur-himachal-pradesh-universities-kyc1niiwsn.jpg",
     },
     {
       imgelink:
@@ -12,7 +12,7 @@ export function FeaturedImageGallery() {
     },
     {
       imgelink:
-        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+        "https://nith.ac.in/international/image/admin_block.jpg",
     },
     {
       imgelink:
@@ -28,6 +28,17 @@ export function FeaturedImageGallery() {
  
   return (
     <div className="grid px-10 gap-4">
+
+        <div className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-gray-800 mb-2">
+            Capturing Moments
+          </h1>
+          <div className="flex items-center justify-center gap-4">
+            <div className="h-[2px] w-20 bg-blue-500"></div>
+            <span className="text-blue-500 font-medium">Gallery</span>
+            <div className="h-[2px] w-20 bg-blue-500"></div>
+          </div>
+        </div>
       <div>
         <img
           className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
@@ -51,4 +62,4 @@ export function FeaturedImageGallery() {
       </div>
     </div>
   );
-} 
+}
