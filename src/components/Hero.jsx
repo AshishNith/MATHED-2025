@@ -1,7 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 const Hero = () => {
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    setDimensions({
+      width: window.innerWidth,
+      height: window.innerHeight
+    });
+  }, []);
+
   return (
     <div className="relative overflow-hidden min-h-screen">
       <div id="home" className="relative h-full w-full flex h-screen items-center bg-cover bg-center bg-no-repeat px-15 py-20" 
@@ -11,7 +20,7 @@ const Hero = () => {
              backgroundSize: 'cover'
            }}>
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-200/30 via-black/50 to-transparent"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-200/30 via-black/50 to-transparent"></div> */}
         
         {/* Animated particles */}
         {[...Array(20)].map((_, i) => (
@@ -19,8 +28,8 @@ const Hero = () => {
             key={i}
             className="absolute w-2 h-2 bg-amber-200 rounded-full"
             initial={{ 
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight 
+              x: Math.random() * dimensions.width,
+              y: Math.random() * dimensions.height 
             }}
             animate={{
               y: [0, -20, 0],
