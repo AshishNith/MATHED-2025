@@ -3,11 +3,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
         <Navbar />  
         <main className="container mx-auto ">
           <Routes>
@@ -18,6 +19,7 @@ const App = () => {
             <Route path="/contact" element={<div>Contact Page</div>} /> */}
           </Routes>
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   )
