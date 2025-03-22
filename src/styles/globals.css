@@ -1,0 +1,15 @@
+/* Optional: Ensure images don't have unwanted spacing */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
