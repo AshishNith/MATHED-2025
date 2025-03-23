@@ -76,7 +76,7 @@ const Advisory = () => {
       <div className="space-y-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {displayMembers.map((member, index) => (
-            <div key={index} className="relative p-4 sm:p-6 border border-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-gray-800 flex flex-col">
+            <div key={index} className="relative p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex flex-col transition-all duration-300 hover:from-amber-500/20 hover:to-yellow-500/20">
               <h4 className="font-semibold text-white text-base sm:text-lg mb-2">{member.name}</h4>
               <p className="text-gray-400 text-xs sm:text-sm italic">{member.affiliation}</p>
             </div>
@@ -85,7 +85,7 @@ const Advisory = () => {
         {members.length > 6 && (
           <button
             onClick={toggleExpand}
-            className="mt-6 sm:mt-8 px-4 sm:px-6 py-2 sm:py-3 text-amber-400 border-2 border-amber-400 rounded-lg hover:bg-amber-400 hover:text-gray-900 transition-all duration-300 mx-auto block text-base sm:text-lg font-medium"
+            className="mt-6 sm:mt-8 px-8 py-4 text-white bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg font-semibold shadow-lg shadow-amber-500/25 hover:from-amber-600 hover:to-yellow-600 transition-all duration-300 mx-auto block text-base sm:text-lg"
           >
             {isExpanded ? '← Show Less' : `Show All ${members.length} Members →`}
           </button>
@@ -95,13 +95,23 @@ const Advisory = () => {
   };
 
   return (
-    <div id='Advisory' className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto space-y-8 sm:space-y-16">
+    <div id='Advisory' className="relative min-h-screen bg-gradient-to-br from-gray-900/90 to-black/90 bg-cover bg-center bg-no-repeat py-16">
+      {/* Decorative pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-black/80">
+        <div className="absolute inset-0 opacity-30" 
+          style={{ 
+            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,176,0,0.15) 2px, transparent 0)',
+            backgroundSize: '32px 32px'
+          }}>
+        </div>
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-16">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl text-white font-bold mb-4">
+          <h2 className="text-4xl font-bold text-amber-400 mb-4">
             Advisory Committees
           </h2>
-          <div className="w-16 sm:w-24 h-1 bg-amber-400 mx-auto"></div>
+          <div className="w-24 h-1 bg-amber-400 mx-auto"></div>
         </div>
 
         <div className="space-y-16">
