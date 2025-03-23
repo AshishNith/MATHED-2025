@@ -43,6 +43,17 @@ const Hero = () => {
               on Advances in Manufacturing, Thermal and Design Engineering
             </p>
 
+            <div className="text-gray-400 text-sm space-y-1">
+              <p>Organized by</p>
+              <p className="font-medium text-gray-300">Department of Mechanical Engineering</p>
+              <p>National Institute of Technology Hamirpur</p>
+              <p>Hamirpur, Himachal Pradesh, India</p>
+              <a href="https://www.nith.ac.in" target="_blank" rel="noopener noreferrer" 
+                className="text-amber-400 hover:text-amber-300">
+                www.nith.ac.in
+              </a>
+            </div>
+
             <div className="flex flex-wrap gap-4">
               <Link to="/register">
                 <motion.button

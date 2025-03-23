@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-black/50 shadow-lg backdrop-blur-sm' : 'bg-transparent'
+      isScrolled ? 'bg-gray-900/90 shadow-lg backdrop-blur-sm border-b border-amber-500/20' : 'bg-transparent'
     } ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
@@ -57,8 +57,8 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0 flex items-center"
           >
-            <Link to="/" className="text-xl  font-bold text-white flex items-center space-x-2 ">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqvs_fsT4L5wQbhNv_pSr2_y0EEBpLXu7MA&s" alt="Logo" className="h-8 w-8 rounded-full" />
+            <Link to="/" className="text-xl font-bold text-amber-400 flex items-center space-x-2 hover:text-amber-300 transition-colors">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqvs_fsT4L5wQbhNv_pSr2_y0EEBpLXu7MA&s" alt="Logo" className="h-8 w-8 rounded-full border-2 border-amber-400" />
               <span>MATHED 2025</span>
             </Link>
           </motion.div>
@@ -73,7 +73,7 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className="px-3 py-2 text-sm font-medium text-white hover:text-amber-400 transition-colors rounded-md"
+                  className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-amber-400 hover:bg-amber-500/10 transition-all rounded-md"
                 >
                   {item.label}
                 </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={toggleMenu}
-              className="text-white p-2 rounded-md hover:bg-white/10 transition-colors"
+              className="text-amber-400 p-2 rounded-md hover:bg-amber-500/10 transition-colors"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -107,14 +107,14 @@ const Navbar = () => {
             opacity: isOpen ? 1 : 0
           }}
           transition={{ duration: 0.3 }}
-          className="md:hidden overflow-hidden bg-gray-900/95 backdrop-blur-sm rounded-b-xl"
+          className="md:hidden overflow-hidden bg-gray-900/95 backdrop-blur-sm rounded-b-xl border-x border-b border-amber-500/20"
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className="block px-3 py-2 text-base font-medium text-white hover:text-amber-400 hover:bg-white/10 rounded-md transition-colors"
+                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-amber-400 hover:bg-amber-500/10 rounded-md transition-all"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

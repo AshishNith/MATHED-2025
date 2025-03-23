@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaUniversity, FaCogs, FaImages } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import Advisory from '../components/Advisory';
 
 const About = () => {
   return (
@@ -102,7 +101,6 @@ const About = () => {
           </motion.section>
         </div>
       </div>
-      <Advisory />
     </div>
   );
 };

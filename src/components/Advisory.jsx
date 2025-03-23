@@ -95,17 +95,8 @@ const Advisory = () => {
   };
 
   return (
-    <div id='Advisory' className="relative min-h-screen bg-gradient-to-br from-gray-900/90 to-black/90 bg-cover bg-center bg-no-repeat py-16">
-      {/* Decorative pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-black/80">
-        <div className="absolute inset-0 opacity-30" 
-          style={{ 
-            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,176,0,0.15) 2px, transparent 0)',
-            backgroundSize: '32px 32px'
-          }}>
-        </div>
-      </div>
-
+    <div id='Advisory' className="relative py-16">
+      {/* Remove background div since it's in App.jsx */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-16">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-amber-400 mb-4">
@@ -114,7 +105,7 @@ const Advisory = () => {
           <div className="w-24 h-1 bg-amber-400 mx-auto"></div>
         </div>
 
-        <div className="space-y-16">
+        <div className="space-y-16"></div>
           <div>
             <h3 className="text-2xl text-amber-400 font-semibold text-center mb-10">
               National Advisory Committee
@@ -138,7 +129,7 @@ const Advisory = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
