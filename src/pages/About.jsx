@@ -16,7 +16,7 @@ const About = () => {
           if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
             scrollContainer.scrollLeft = 0;
           } else {
-            scrollContainer.scrollLeft += 10; // Increased from 1 to 2 for faster scroll
+            scrollContainer.scrollLeft += 15; // Increased from 1 to 2 for faster scroll
           }
         }
       }, 20); // Decreased from 30 to 20 for more frequent updates
@@ -229,25 +229,24 @@ const About = () => {
                       alt: "Department",
                       title: "Department Building"
                     },
-                    // Additional images
+                    // {
+                    //   src: "https://www.nith.ac.in/uploads/topics/16964175015520.jpg",
+                    //   alt: "Library Building",
+                    //   title: "Central Library"
+                    // },
                     {
-                      src: "https://www.collegebatch.com/static/clg-gallery/national-institute-of-technology-hamirpur-239446.jpg",
-                      alt: "Library Building",
-                      title: "Central Library"
-                    },
-                    {
-                      src: "https://images.static-collegedunia.com/public/college_data/images/appImage/15024991071444996760NITHamirpurNewImage.jpg",
+                      src: "https://mind2023.nith.ac.in/pictures/night-sp.jpg",
                       alt: "Campus Life",
                       title: "Student Life"
                     },
                     {
-                      src: "https://www.collegebatch.com/static/clg-gallery/national-institute-of-technology-hamirpur-239448.jpg",
+                      src: "https://nith.ac.in/uploads/topics/hostelphoto16442124065939.jpg",
                       alt: "Labs",
                       title: "Research Labs"
                     },
                     // Duplicate images for infinite scroll
                     {
-                      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEGWllkqzstEq_D631lrZ8wX3eu_GslWEvww&s",
+                      src: "https://nith.ac.in/international/image/nith25.jpg",
                       alt: "NIT Hamirpur Campus",
                       title: "Campus View"
                     },
@@ -261,11 +260,11 @@ const About = () => {
                       alt: "Department",
                       title: "Department Building"
                     },
-                    {
-                      src: "https://www.collegebatch.com/static/clg-gallery/national-institute-of-technology-hamirpur-239446.jpg",
-                      alt: "Library Building",
-                      title: "Central Library"
-                    },
+                    // {
+                    //   src: "https://www.collegebatch.com/static/clg-gallery/national-institute-of-technology-hamirpur-239446.jpg",
+                    //   alt: "Library Building",
+                    //   title: "Central Library"
+                    // },
                     {
                       src: "https://images.static-collegedunia.com/public/college_data/images/appImage/15024991071444996760NITHamirpurNewImage.jpg",
                       alt: "Campus Life",

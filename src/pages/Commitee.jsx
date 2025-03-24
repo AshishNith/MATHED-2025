@@ -21,22 +21,23 @@ const Committee = () => {
     },
     {
       position: 'Organizing Secretary',
+      name: 'Dr. Dilshad Ahmad Khan',
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/202.jpg'  
+    },
+    {
+      position: 'Organizing Secretary',
       name: 'Dr. Laxmikant Yadav',
       image: 'https://portfolios.nith.ac.in/uploads/member_details/337.jpg'  
     },
     {
       position: 'Organizing Secretary',
-      name: 'Dr. Dilshad Ahmad Khan',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/202.jpg'  
+      name: 'Dr. Param Singh',
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/181.jpg'  
     },
    {
       position: 'Organizing Secretary',
       name: 'Dr. Niharika Gupta',
       image: 'https://portfolios.nith.ac.in/uploads/member_details/414.jpg'  
-    },{
-      position: 'Organizing Secretary',
-      name: 'Dr. Param Singh',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/181.jpg'  
     },
     {
       position: 'Treasurer',

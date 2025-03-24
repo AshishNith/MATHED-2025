@@ -8,7 +8,7 @@ import Registration from './components/Registration'
 import Committee from './pages/Commitee'
 
 const BackgroundPattern = () => (
-  <div className="fixed inset-0 -z-10 bg-gradient-to-br from-gray-900/90 to-black/90 bg-cover bg-center bg-no-repeat">
+  <div className="fixed inset-0 -z-10">
     <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 to-black/90">
       <div className="absolute inset-0 opacity-30" 
         style={{ 

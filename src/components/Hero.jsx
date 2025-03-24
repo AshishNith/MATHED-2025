@@ -24,32 +24,32 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Content */}
+      <div className="relative min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex items-center justify-center">
+        <div className="text-center max-w-4xl mx-auto">
           <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center space-x-2">
+            <div className="flex items-center justify-center space-x-2">
               <div className="h-px w-8 bg-amber-400"></div>
               <span className="text-amber-400 font-semibold tracking-wider">MATHED 2025</span>
+              <div className="h-px w-8 bg-amber-400"></div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold">
+            <h1 className="text-5xl md:text-7xl font-bold whitespace-nowrap">
               <span className="text-white">3<sup>rd</sup> International</span>
-              <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600">
+              <span className="ml-3 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600">
                 Conference
               </span>
             </h1>
 
-            <p className="text-gray-300 text-lg max-w-xl">
+            <p className="text-gray-300 text-xl max-w-2xl mx-auto">
               on Advances in Manufacturing, Thermal and Design Engineering
             </p>
 
-            <div className="text-gray-400 text-sm space-y-1">
+            <div className="text-gray-400 text-lg space-y-2">
               <p>Organized by</p>
               <p className="font-medium text-gray-300">Department of Mechanical Engineering</p>
               <p>National Institute of Technology Hamirpur</p>
@@ -60,7 +60,7 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Link to="/register">
                 <motion.button
                   whileHover={{ scale: 1.02 }}
@@ -79,16 +79,8 @@ const Hero = () => {
                 Learn More
               </motion.button>
             </div>
-          </motion.div>
 
-          {/* Right Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-6"
-          >
-            <div className="grid gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
               <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm">
                 <div className="flex items-center gap-4">
                   <div className="p-3 rounded-xl bg-amber-500/20">
@@ -131,7 +123,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <motion.div 
+      {/* <motion.div 
         onClick={scrollToCallForPaper}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -146,7 +138,7 @@ const Hero = () => {
         className='w-10 h-10 bg-amber-400/50 rounded-full absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center cursor-pointer hover:bg-amber-400/70 transition-colors'
       >
         <FaArrowDown className='text-black' />
-      </motion.div>
+      </motion.div> */}
 
     </div>
   )
