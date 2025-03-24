@@ -11,30 +11,32 @@ const ImportantDates = () => {
     ];
 
     return (
-        <div className="relative min-h-screen  py-16">
-
-
-            <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-8">
+        <div id='importantDate' className="relative py-20 px-4">
+            <div className="container max-w-4xl mx-auto">
+                <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-amber-400 mb-4">Important Dates</h2>
-                    <div className="w-24 h-1 bg-amber-400 mx-auto"></div>
+                    <div className="w-32 h-1 bg-amber-400 mx-auto"></div>
                 </div>
 
-                <div className="rounded-2xl bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm overflow-hidden">
-                    {dates.map((item, index) => (
-                        <div key={index} className="flex justify-between p-4 border-b border-amber-500/20 last:border-b-0">
-                            <div className="flex-2 font-medium text-white">{item.event}</div>
-                            <div className="flex-1 text-right text-amber-400">{item.date}</div>
+                <div className="grid gap-8">
+                    <div className="rounded-2xl bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm overflow-hidden shadow-xl">
+                        {dates.map((item, index) => (
+                            <div key={index} className="flex justify-between p-5 border-b border-amber-500/20 last:border-b-0 hover:bg-amber-500/5 transition-colors">
+                                <div className="flex-1 font-medium text-white">{item.event}</div>
+                                <div className="flex-none pl-4 text-amber-400 font-semibold">{item.date}</div>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <div className="rounded-2xl bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm shadow-xl">
+                        <div className="p-8">
+                            <h3 className="text-2xl font-bold text-amber-400 mb-6">Note:</h3>
+                            <ul className="list-disc pl-6 space-y-4 text-gray-300">
+                                <li className="leading-relaxed">All accepted and presented papers will be published in the conference proceeding (Collaboration with journal proceedings is currently in progress).</li>
+                                <li className="leading-relaxed">Plagiarism must be strictly avoided, and the similarity index should be less than 20%. Manuscripts exceeding this limit may be rejected at any stage of the conference-during peer review, publication, or scheduling.</li>
+                            </ul>
                         </div>
-                    ))}
-                </div>
-                
-                <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm">
-                    <h3 className="text-xl font-bold text-amber-400 mb-4">Note:</h3>
-                    <ul className="list-disc pl-6 space-y-3 text-gray-300">
-                        <li className="leading-relaxed">All accepted and presented papers will be published in the conference proceeding (Collaboration with journal proceedings is currently in progress).</li>
-                        <li className="leading-relaxed">Plagiarism must be strictly avoided, and the similarity index should be less than 20%. Manuscripts exceeding this limit may be rejected at any stage of the conference-during peer review, publication, or scheduling.</li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,8 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { FaArrowDown } from 'react-icons/fa';
 
 const Hero = () => {
+  const scrollToCallForPaper = () => {
+    const element = document.getElementById('CallForPaper');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div id='Hero' className="relative min-h-screen bg-gradient-to-br from-gray-900/90 to-black/90 bg-cover bg-center bg-no-repeat"
       style={{
@@ -65,6 +71,7 @@ const Hero = () => {
                 </motion.button>
               </Link>
               <motion.button
+                onClick={scrollToCallForPaper}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-8 py-4 border border-amber-500/30 text-amber-400 rounded-lg font-semibold hover:bg-amber-500/10"
@@ -123,6 +130,24 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
+
+      <motion.div 
+        onClick={scrollToCallForPaper}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        animate={{ 
+          y: [0, -10, 0],
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+        className='w-10 h-10 bg-amber-400/50 rounded-full absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center cursor-pointer hover:bg-amber-400/70 transition-colors'
+      >
+        <FaArrowDown className='text-black' />
+      </motion.div>
+
     </div>
   )
 }

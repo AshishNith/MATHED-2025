@@ -1,13 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import { useScrollToSection } from '../hooks/useScrollToSection';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+
+  const scrollToSection = useScrollToSection();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,8 +45,24 @@ const Navbar = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/committee', label: 'Committee' },
-
+    { path: '/', label: 'Call for Papers', section: 'CallForPaper' },
+    { path: '/', label: 'Important Dates', section: 'importantDate' },
+    { path: '/register', label: 'Registration' },
+    { path: '/', label: 'Contact', section: 'Contact' },
   ];
+
+  const handleNavClick = async (item) => {
+    setIsOpen(false);
+    if (item.section) {
+      if (location.pathname !== '/') {
+        await navigate('/', { state: { scrollTo: item.section }});
+      } else {
+        scrollToSection(item.section);
+      }
+    } else {
+      navigate(item.path);
+    }
+  };
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -67,12 +88,13 @@ const Navbar = () => {
           <div className="hidden md:flex md:items-center md:space-x-1">
             {navItems.map((item) => (
               <motion.div
-                key={item.path}
+                key={item.path + item.section}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Link
                   to={item.path}
+                  onClick={() => handleNavClick(item)}
                   className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-amber-400 hover:bg-amber-500/10 transition-all rounded-md"
                 >
                   {item.label}
@@ -112,10 +134,10 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <Link
-                key={item.path}
+                key={item.path + item.section}
                 to={item.path}
+                onClick={() => handleNavClick(item)}
                 className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-amber-400 hover:bg-amber-500/10 rounded-md transition-all"
-                onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </Link>
