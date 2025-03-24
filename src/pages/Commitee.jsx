@@ -7,32 +7,40 @@ const Committee = () => {
       position: 'Chief Patron',
       name: 'Prof. H. M. Suryawanshi',
       title: 'Director, NIT Hamirpur',
-      image: 'https://lh6.googleusercontent.com/0hSisadVYALjwFnd2bE-1EMi6mWDF4Oki3syPjGmpJC3soO9Y2KBNykWshqSWKZDVydL-f24LpigLtZ12r-DI35DHN1icgXK5TnjZr6DFya9P9M7peQl-ffGLQWu7HPpRA=w1280' // Add actual image path
+      image: 'https://nith.ac.in/uploads/topics/hms16438810105577.jpg'  
     },
     {
       position: 'Patron',
       name: 'Dr. Prashant Kumar',
-      image: 'https://lh5.googleusercontent.com/lZQRkcMubtV7wpK8bAB48FKyEzDf776rMAIuUa_tRiLRzE_FgOvaY1C-VJB7JFmDUulzmZI3Aiy0m0XZhWD2Fjse1jhfQgupobLLCvoWehHog9BD8Vn9Bej_EWMRbHWc2g=w1280' // Add actual image path
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/111.jpg'  
     },
     {
       position: 'Chairman',
       name: 'Dr. Rajesh Kumar Sharma',
-      image: '/images/members/chairman.jpg' // Add actual image path
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/99.jpg'  
     },
     {
       position: 'Organizing Secretary',
       name: 'Dr. Dilshad Ahmad Khan',
-      image: '/images/members/organizing_secretary1.jpg' // Add actual image path
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/202.jpg'  
     },
     {
       position: 'Organizing Secretary',
       name: 'Dr. Laxmikant Yadav',
-      image: '/images/members/organizing_secretary2.jpg' // Add actual image path
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/337.jpg'  
+    },{
+      position: 'Organizing Secretary',
+      name: 'Dr. Niharika Gupta',
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/414.jpg'  
+    },{
+      position: 'Organizing Secretary',
+      name: 'Dr. Param Singh',
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/181.jpg'  
     },
     {
       position: 'Treasurer',
       name: 'Dr. Deepak Sharma',
-      image: '/images/members/treasurer.jpg' // Add actual image path
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/186.jpg'  
     }
   ];
 
