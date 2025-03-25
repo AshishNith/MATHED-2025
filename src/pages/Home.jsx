@@ -8,6 +8,7 @@ import Contact from '../components/Contact';
 import CallForPaper from '../components/CallForPaper';
 import KnowMoreAboutUs from '../components/KnowMoreAboutUs';
 import Speaker from '../components/Speaker';
+// import ContactForm from '../components/ContactForm';
 
 const Home = () => {
   const location = useLocation();
@@ -32,6 +33,7 @@ const Home = () => {
       <Advisory />
       
       <Contact />
+      {/* <ContactForm /> */}
     </div>
   )
 }
