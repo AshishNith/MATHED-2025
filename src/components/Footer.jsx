@@ -50,7 +50,11 @@ const Footer = () => {
 
         <div className="border-t border-amber-500/20 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Conference NITH. All rights reserved.</p>
+          <br />
+          <p>Designed and Developed by Ashish Ranjan</p>
+
         </div>
+    
       </div>
     </footer>
   );

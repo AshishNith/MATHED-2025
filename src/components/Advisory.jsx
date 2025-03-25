@@ -76,16 +76,16 @@ const Advisory = () => {
       <div className="space-y-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {displayMembers.map((member, index) => (
-            <div key={index} className="relative p-4 sm:p-6 rounded-2xl bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex flex-col transition-all duration-300 hover:from-amber-500/20 hover:to-yellow-500/20">
-              <h4 className="font-semibold text-white text-base sm:text-lg mb-2">{member.name}</h4>
-              <p className="text-gray-400 text-xs sm:text-sm italic">{member.affiliation}</p>
+            <div key={index} className="relative p-4 sm:p-6 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 backdrop-blur-sm flex flex-col transition-all duration-300 hover:from-amber-100 hover:to-amber-200">
+              <h4 className="font-semibold text-gray-800 text-base sm:text-lg mb-2">{member.name}</h4>
+              <p className="text-gray-600 text-xs sm:text-sm italic">{member.affiliation}</p>
             </div>
           ))}
         </div>
         {members.length > 6 && (
           <button
             onClick={toggleExpand}
-            className="mt-6 sm:mt-8 px-8 py-4 text-white bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg font-semibold shadow-lg shadow-amber-500/25 hover:from-amber-600 hover:to-yellow-600 transition-all duration-300 mx-auto block text-base sm:text-lg"
+            className="mt-6 sm:mt-8 px-8 py-4 text-white bg-gradient-to-r from-amber-600 to-amber-500 rounded-lg font-semibold shadow-lg shadow-amber-500/25 hover:from-amber-700 hover:to-amber-600 transition-all duration-300 mx-auto block text-base sm:text-lg"
           >
             {isExpanded ? '← Show Less' : `Show All ${members.length} Members →`}
           </button>
@@ -95,19 +95,25 @@ const Advisory = () => {
   };
 
   return (
-    <div id='Advisory' className="relative py-16">
-      {/* Remove background div since it's in App.jsx */}
+    <div id='Advisory' className="relative py-16 bg-gray-50">
+      <div className="absolute inset-0 bg-white"></div>
+      <div className="absolute inset-0 opacity-30" 
+        style={{ 
+          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(217,119,6,0.15) 2px, transparent 0)',
+          backgroundSize: '24px 24px'
+        }}>
+      </div>
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-16">
         <div className="text-center">
-          <h2 className="text-4xl font-bold text-amber-400 mb-4">
+          <h2 className="text-5xl font-bold text-amber-600 mb-4">
             Advisory Committees
           </h2>
-          <div className="w-24 h-1 bg-amber-400 mx-auto"></div>
+          <div className="w-32 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-8"></div>
         </div>
 
-        <div className="space-y-16"></div>
+        <div className="space-y-16">
           <div>
-            <h3 className="text-2xl text-amber-400 font-semibold text-center mb-10">
+            <h3 className="text-2xl text-amber-600 font-semibold text-center mb-10">
               National Advisory Committee
             </h3>
             <DisplayCommittee 
@@ -118,7 +124,7 @@ const Advisory = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl text-amber-400 font-semibold text-center mb-10">
+            <h3 className="text-2xl text-amber-600 font-semibold text-center mb-10">
               International Advisory Committee
             </h3>
             <DisplayCommittee 
@@ -129,7 +135,7 @@ const Advisory = () => {
           </div>
         </div>
       </div>
-    
+    </div>
   );
 };
 

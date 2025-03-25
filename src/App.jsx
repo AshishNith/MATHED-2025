@@ -8,11 +8,11 @@ import Registration from './components/Registration'
 import Committee from './pages/Commitee'
 
 const BackgroundPattern = () => (
-  <div className="fixed inset-0 -z-10">
-    <div className="absolute inset-0 bg-gradient-to-br from-gray-900/90 to-black/90">
+  <div className="fixed inset-0 -z-10 bg-gray-50">
+    <div className="absolute inset-0 ">
       <div className="absolute inset-0 opacity-30" 
         style={{ 
-          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,176,0,0.15) 2px, transparent 0)',
+          backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(217,119,6,0.15) 2px, transparent 0)',
           backgroundSize: '32px 32px'
         }}>
       </div>
@@ -23,7 +23,7 @@ const BackgroundPattern = () => (
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative text-gray-800">
         <BackgroundPattern />
         <Navbar />  
         <main className="container mx-auto relative z-10">

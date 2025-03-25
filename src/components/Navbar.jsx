@@ -79,7 +79,7 @@ const Navbar = () => {
             className="flex-shrink-0 flex items-center"
           >
             <Link to="/" className="text-xl font-bold text-amber-400 flex items-center space-x-2 hover:text-amber-300 transition-colors">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqvs_fsT4L5wQbhNv_pSr2_y0EEBpLXu7MA&s" alt="Logo" className="h-8 w-8 rounded-full border-2 border-amber-400" />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUqvs_fsT4L5wQbhNv_pSr2_y0EEBpLXu7MA&s" alt="Logo" className="h-10 w-10 rounded-full border-2 border-amber-400" />
               <span>MATHED 2025</span>
             </Link>
           </motion.div>
