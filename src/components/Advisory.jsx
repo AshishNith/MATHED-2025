@@ -5,7 +5,7 @@ const Advisory = () => {
   const [expandInternational, setExpandInternational] = useState(false);
 
   const nationalCommittee = [
-    { "name": "Prof. V.K. Jain", "affiliation": "IIT Kanpur (Rtd)" },
+    { "name": "Prof. V.K. Jain (Rtd)", "affiliation": "IIT Kanpur" },
     { "name": "Prof. Sunil Jha", "affiliation": "IIT Delhi" },
     { "name": "Prof. J. Ram Kumar", "affiliation": "IIT Kanpur" },
     { "name": "Prof. Sudarsan Ghosh", "affiliation": "IIT Delhi" },
@@ -60,7 +60,7 @@ const Advisory = () => {
   ];
 
   const internationalCommittee = [
-    { "name": "Prof. Mustafizur Rahman", "affiliation": "Singapore" },
+    { "name": "Prof. Mustafizur Rahman (Rtd)", "affiliation": "Singapore" },
     { "name": "Prof. Kapil Gupta", "affiliation": "University of Johannesburg" },
     { "name": "Prof. Sridhar Idapalapati", "affiliation": "NTU Singapore" },
     { "name": "Dr. Faiz Iqbal", "affiliation": "Lincoln University, U.K" },

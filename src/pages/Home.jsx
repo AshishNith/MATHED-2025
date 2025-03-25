@@ -7,6 +7,7 @@ import ImportantDates from '../components/ImportantDates';
 import Contact from '../components/Contact';
 import CallForPaper from '../components/CallForPaper';
 import KnowMoreAboutUs from '../components/KnowMoreAboutUs';
+import Speaker from '../components/Speaker';
 
 const Home = () => {
   const location = useLocation();
@@ -27,6 +28,7 @@ const Home = () => {
       <KnowMoreAboutUs />
       <ImportantDates />
       <CallForPaper />
+      <Speaker />
       <Advisory />
       
       <Contact />

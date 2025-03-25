@@ -49,6 +49,7 @@ const Navbar = () => {
     { path: '/', label: 'Important Dates', section: 'importantDate' },
     { path: '/register', label: 'Registration' },
     { path: '/', label: 'Contact', section: 'Contact' },
+    { path: '/sponsors', label: 'Sponsers', section: '' },
   ];
 
   const handleNavClick = async (item) => {
@@ -66,7 +67,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-amber-500/10 shadow-lg backdrop-blur-sm border-b border-amber-500/20' : 'bg-transparent'
+      isScrolled ? 'bg-gradient-to-br from-gray-900/90 to-black/90 shadow-lg backdrop-blur-sm border-b border-amber-500/20' : 'bg-transparent'
     } ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
@@ -95,7 +96,7 @@ const Navbar = () => {
                 <Link
                   to={item.path}
                   onClick={() => handleNavClick(item)}
-                  className="px-3 py-2 text-sm font-medium text-gray-300 hover:text-amber-400 hover:bg-amber-500/10 transition-all rounded-md"
+                  className="px-3 py-2 text-sm font-medium text-amber-400 hover:text-amber-300 hover:bg-amber-500/10 transition-all rounded-md"
                 >
                   {item.label}
                 </Link>
@@ -129,7 +130,7 @@ const Navbar = () => {
             opacity: isOpen ? 1 : 0
           }}
           transition={{ duration: 0.3 }}
-          className="md:hidden overflow-hidden bg-gray-900/95 backdrop-blur-sm rounded-b-xl border-x border-b border-amber-500/20"
+          className="md:hidden overflow-hidden bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-sm rounded-b-xl border-x border-b border-amber-500/20"
         >
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
@@ -137,7 +138,7 @@ const Navbar = () => {
                 key={item.path + item.section}
                 to={item.path}
                 onClick={() => handleNavClick(item)}
-                className="block px-3 py-2 text-base font-medium text-gray-300 hover:text-amber-400 hover:bg-amber-500/10 rounded-md transition-all"
+                className="block px-3 py-2 text-base font-medium text-amber-400 hover:text-amber-300 hover:bg-amber-500/10 rounded-md transition-all"
               >
                 {item.label}
               </Link>

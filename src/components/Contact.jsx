@@ -85,6 +85,18 @@ const Contact = () => {
                       +91-7000201281
                     </a>
                   </div>
+                  <div className="space-y-1">
+                    <p className="font-medium text-amber-300">Dr. Niharika</p>
+                    <a href="tel:+919958114561" className="text-gray-600 hover:text-amber-600 transition-colors block">
+                      +91-9958114561
+                    </a>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="font-medium text-amber-300">Dr. Param</p>
+                    <a href="tel:+917355477464" className="text-gray-600 hover:text-amber-600 transition-colors block">
+                      +91-7355477464
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
