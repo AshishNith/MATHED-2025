@@ -6,6 +6,7 @@ import About from './pages/About'
 import Footer from './components/Footer'
 import Registration from './components/Registration'
 import Committee from './pages/Commitee'
+import Sponsors from './pages/Sponsors'
 
 const BackgroundPattern = () => (
   <div className="fixed inset-0 -z-10 bg-gray-50">
@@ -32,6 +33,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/register" element={<Registration />} />
             <Route path="/committee" element={<Committee />} />
+            <Route path="/sponsors" element={<Sponsors />} />
             {/* <Route path="/schedule" element={<div>Schedule Page</div>} />
             <Route path="/speakers" element={<div>Speakers Page</div>} />
             <Route path="/contact" element={<div>Contact Page</div>} /> */}
