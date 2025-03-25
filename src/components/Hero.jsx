@@ -1,15 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-// Change the import to use relative path
-import brochure from '/Assets/Brochure.pdf'
 
 const Hero = () => {
-  // Add download handler function
   const handleDownloadBrochure = () => {
-    // Create an anchor element and trigger download
+    // Update the path to use the public directory
+    const brochurePath = '/assets/Brochure.pdf';
     const link = document.createElement('a');
-    link.href = brochure;
+    link.href = brochurePath;
     link.download = 'MATHED2025_Brochure.pdf';
     document.body.appendChild(link);
     link.click();
