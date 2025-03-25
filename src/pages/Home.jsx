@@ -8,6 +8,8 @@ import Contact from '../components/Contact';
 import CallForPaper from '../components/CallForPaper';
 import KnowMoreAboutUs from '../components/KnowMoreAboutUs';
 import Speaker from '../components/Speaker';
+import Gallery from '../components/Gallery';
+import { FeaturedImageGallery } from '../components/Gallary';
 // import ContactForm from '../components/ContactForm';
 
 const Home = () => {
@@ -31,7 +33,7 @@ const Home = () => {
       <CallForPaper />
       <Speaker />
       <Advisory />
-      
+      {/* <FeaturedImageGallery /> */}
       <Contact />
       {/* <ContactForm /> */}
     </div>
