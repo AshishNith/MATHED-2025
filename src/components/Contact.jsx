@@ -86,13 +86,13 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="space-y-1">
-                    <p className="font-medium text-amber-300">Dr. Niharika</p>
+                    <p className="font-medium text-amber-300">Dr. Niharika Gupta</p>
                     <a href="tel:+919958114561" className="text-gray-600 hover:text-amber-600 transition-colors block">
                       +91-9958114561
                     </a>
                   </div>
                   <div className="space-y-1">
-                    <p className="font-medium text-amber-300">Dr. Param</p>
+                    <p className="font-medium text-amber-300">Dr. Param Singh</p>
                     <a href="tel:+917355477464" className="text-gray-600 hover:text-amber-600 transition-colors block">
                       +91-7355477464
                     </a>
