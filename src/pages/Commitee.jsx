@@ -39,7 +39,7 @@ const Committee = () => {
       name: 'Dr. Param Singh',
       image: 'https://portfolios.nith.ac.in/uploads/member_details/181.jpg',
       email: 'psingh@nith.ac.in',
-      phone: '+91-9452869752'  
+      phone: '+91-9958114561'  
     },
     {
       position: 'Organizing Secretary',
