@@ -9,8 +9,6 @@ const Committee = () => {
       name: 'Prof. H. M. Suryawanshi',
       title: 'Hon. Director, NIT Hamirpur',
       image: 'https://nith.ac.in/uploads/topics/hms16438810105577.jpg',
-      email: 'director@nith.ac.in',
-      phone: '+91-XXXXXXXXXX'
     },
     {
       position: 'Patron',
@@ -25,42 +23,43 @@ const Committee = () => {
     {
       position: 'Organizing Secretary',
       name: 'Dr. Dilshad Ahmad Khan',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/202.jpg'  
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/202.jpg',
+      email: 'dilshad@nith.ac.in',
+      phone: '+91-94598-86738'
     },
     {
       position: 'Organizing Secretary',
       name: 'Dr. Laxmikant Yadav',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/337.jpg'  
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/337.jpg',
+      email: 'laxmikant@nith.ac.in',
+      phone: '+91-94598-86739'  
     },
     {
       position: 'Organizing Secretary',
       name: 'Dr. Param Singh',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/181.jpg'  
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/181.jpg',
+      email: 'psingh@nith.ac.in',
+      phone: '+91-9452869752'  
     },
-   {
+    {
       position: 'Organizing Secretary',
       name: 'Dr. Niharika Gupta',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/414.jpg'  
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/414.jpg',
+      email: 'niharikagupta@nith.ac.in',
+      phone: '--'  
     },
     {
       position: 'Treasurer',
       name: 'Dr. Deepak Sharma',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/186.jpg'  
+      image: 'https://portfolios.nith.ac.in/uploads/member_details/186.jpg',
+      email: '	dsharma@nith.ac.in',
+      phone: '--'  
     }
   ];
 
   const categories = [
     {
-      title: "Leadership",
-      members: [members.filter(m => ["Chief Patron", "Patron", "Chairman"].includes(m.position))]
-    },
-    {
-      title: "Organizing Secretaries",
-      members: [members.filter(m => m.position === "Organizing Secretary")]
-    },
-    {
-      title: "Finance",
-      members: [members.filter(m => m.position === "Treasurer")]
+      title: "Leadership",  
     }
   ];
 
@@ -106,22 +105,14 @@ const Committee = () => {
                 <div className={`${styles.flipCardBack} bg-gradient-to-br from-amber-100 to-amber-200 border border-amber-200`}>
                   <h2 className="text-gray-800 text-xl font-semibold mb-2">{member.name}</h2>
                   <h3 className="text-amber-600 text-sm font-medium mb-4">{member.position}</h3>
-                  <div className="space-y-3 text-gray-600">
-                    <p className="text-sm">
-                      <i className="fas fa-envelope mr-2"></i>
-                      {member.email || 'email@nith.ac.in'}
-                    </p>
-                    <p className="text-sm">
-                      <i className="fas fa-phone mr-2"></i>
-                      {member.phone || '+91-XXXXXXXXXX'}
-                    </p>
-                    {member.title && (
+                  {member.title && (
+                    <div className="space-y-3 text-gray-600">
                       <p className="text-sm">
                         <i className="fas fa-user-tie mr-2"></i>
                         {member.title}
                       </p>
-                    )}
-                  </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -157,11 +148,11 @@ const Committee = () => {
                     <div className="space-y-2 text-gray-600">
                       <p className="text-sm">
                         <i className="fas fa-envelope mr-2"></i>
-                        {member.email || 'email@nith.ac.in'}
+                        {member.email}
                       </p>
                       <p className="text-sm">
                         <i className="fas fa-phone mr-2"></i>
-                        {member.phone || '+91-XXXXXXXXXX'}
+                        {member.phone}
                       </p>
                     </div>
                   </div>
