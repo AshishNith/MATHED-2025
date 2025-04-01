@@ -62,7 +62,7 @@ const Contact = () => {
                 </h3>
                 <a href="mailto:mathed2025@gmail.com" 
                    className="text-gray-600 hover:text-amber-600 transition-colors pl-1 border-l-2 border-amber-300/50 ml-2">
-                  mathed2025@gmail.com
+                  mathed2025@nith.ac.in
                 </a>
               </div>
 
