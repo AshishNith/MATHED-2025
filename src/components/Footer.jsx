@@ -71,7 +71,7 @@ const Footer = () => {
         <div className="border-t border-amber-500/20 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Conference NITH. All rights reserved.</p>
           <br />
-          <p>Designed and Developed by <a className='text-white ' href="https://portfolio-ashish9992.vercel.app/">Ashish Ranjan</a> </p>
+          <p>Designed and Developed by <a className='text-white ' href="https://portfolio-ashish9992.vercel.app/">Satvik Sriastava</a> </p>
 
         </div>
     
