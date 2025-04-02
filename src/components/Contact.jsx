@@ -74,25 +74,25 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-4 pl-1 border-l-2 border-amber-500/30 ml-2">
                   <div className="space-y-1">
-                    <p className="font-medium text-amber-300">Dr. Dilshad Ahmad Khan</p>
+                    <p className="font-medium text-amber-700">Dr. Dilshad Ahmad Khan</p>
                     <a href="tel:+919718409294" className="text-gray-600 hover:text-amber-600 transition-colors block">
                       +91-9718409294
                     </a>
                   </div>
                   <div className="space-y-1">
-                    <p className="font-medium text-amber-300">Dr. Laxmikant Yadav</p>
+                    <p className="font-medium text-amber-700">Dr. Laxmikant Yadav</p>
                     <a href="tel:+917000201281" className="text-gray-600 hover:text-amber-600 transition-colors block">
                       +91-7000201281
                     </a>
                   </div>
                   <div className="space-y-1">
-                    <p className="font-medium text-amber-300">Dr. Niharika Gupta</p>
+                    <p className="font-medium text-amber-700">Dr. Niharika Gupta</p>
                     <a href="tel:+919958114561" className="text-gray-600 hover:text-amber-600 transition-colors block">
                       +91-9958114561
                     </a>
                   </div>
                   <div className="space-y-1">
-                    <p className="font-medium text-amber-300">Dr. Param Singh</p>
+                    <p className="font-medium text-amber-700">Dr. Param Singh</p>
                     <a href="tel:+917355477464" className="text-gray-600 hover:text-amber-600 transition-colors block">
                       +91-7355477464
                     </a>
@@ -103,18 +103,7 @@ const Contact = () => {
           </motion.div>
         </div>
 
-        {/* Registration Note */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-center mt-8 text-gray-600"
-        >
-          <p>For Registration & other details, please visit our website</p>
-          <a href="#" className="text-amber-600 hover:text-amber-500 transition-colors font-semibold">
-            XXXXX.ac.in
-          </a>
-        </motion.div>
+    
       </div>
     </div>
   );

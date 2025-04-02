@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   const handleDownloadBrochure = () => {
-    // Update the path to use the public directory
-    const brochurePath = '/assets/Brochure.pdf';
     const link = document.createElement('a');
-    link.href = brochurePath;
+    link.href = '/assets/Brochure.pdf';
     link.download = 'MATHED2025_Brochure.pdf';
     document.body.appendChild(link);
     link.click();
@@ -19,7 +17,6 @@ const Hero = () => {
       style={{
         backgroundImage: "url('https://qph.cf2.quoracdn.net/main-qimg-b228e266db590542dc3d869bea96f976.webp')",
       }}>
-      {/* Decorative pattern with increased opacity for better visibility */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 to-black/80">
         <div className="absolute inset-0 opacity-30" 
           style={{ 
