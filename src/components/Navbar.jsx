@@ -80,7 +80,7 @@ const Navbar = () => {
             className="flex-shrink-0 flex items-center"
           >
             <Link to="/" className="text-xl font-bold text-amber-400 flex items-center space-x-2 hover:text-amber-300 transition-colors">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8SlA4-cfViHvndmDS7q9lgxopHtCtcfZ0Xw&s" alt="Logo" className="h-10 w-10 rounded-full border-2 border-amber-400" />
+              <img src="/Assets/logo.ico" alt="Logo" className="h-10 w-10 rounded-full border-2 border-amber-400" />
               <span>MATHED 2025</span>
             </Link>
           </motion.div>
