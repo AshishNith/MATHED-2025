@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFileUpload, FaCreditCard, FaUsers } from 'react-icons/fa';
+import { FaFileUpload, FaCreditCard, FaUsers, FaFilePdf } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import qrImage from "/Assets/QR.png"
 
@@ -44,6 +44,62 @@ const Registration = () => {
                 Authors are required to submit both their abstracts and full-length papers through the
                 Microsoft CMT tool using the provided link.
               </p>
+            </div>
+          </div>
+        </motion.section>
+
+        {/* Call for Papers Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="p-6 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 backdrop-blur-sm"
+        >
+          <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="flex-1">
+              <h2 className="text-2xl font-semibold text-amber-600 mb-6 flex items-center">
+                <FaFileUpload className="text-amber-600 mr-3" />
+                Call for Papers & Submission Guidelines
+              </h2>
+              <p className="text-gray-600 mb-4">
+                We are pleased to invite high-quality research papers for presentation at the 3rd International Conference on Advances in Manufacturing, Thermal and Design Engineering (MATHED 2025).
+              </p>
+              
+              <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">Author Guidelines</h3>
+              <ul className="list-disc list-inside space-y-2 text-gray-600">
+                <li>Paper Length: 10-12 pages (including references and appendices)</li>
+                <li>Format: Follow Springer's Conference Proceedings format</li>
+                <li>Language: All papers must be written in English</li>
+                <li>Originality: Submissions must be original and not simultaneously submitted elsewhere</li>
+              </ul>
+
+              <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">Submission Process</h3>
+              <div className="bg-white rounded-lg p-4 border border-amber-200">
+                <ol className="list-decimal list-inside space-y-2 text-gray-600">
+                  <li>Prepare your manuscript as per the Springer formatting guidelines</li>
+                  <li>Visit the CMT submission portal: 
+                    <a href="https://cmt3.research.microsoft.com/YourConference2025" 
+                       className="text-amber-600 hover:text-amber-700 ml-1" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                      https://cmt3.research.microsoft.com/YourConference2025
+                    </a>
+                  </li>
+                  <li>Register/log in to CMT</li>
+                  <li>Click on "Create New Submission"</li>
+                  <li>Fill in the required details (title, abstract, authors, keywords, etc.)</li>
+                  <li>Upload your manuscript in PDF format</li>
+                  <li>Submit and confirm your submission</li>
+                </ol>
+              </div>
+              
+              <div className="mt-6">
+                <a href="#" 
+                   className="inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors">
+                  <FaFilePdf className="mr-2" />
+                  Download Paper Format Template
+                </a>
+              </div>
             </div>
           </div>
         </motion.section>

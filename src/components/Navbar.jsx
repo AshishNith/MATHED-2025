@@ -47,7 +47,7 @@ const Navbar = () => {
     { path: '/committee', label: 'Committee' },
     { path: '/', label: 'Call for Papers', section: 'CallForPaper' },
     { path: '/', label: 'Important Dates', section: 'importantDate' },
-    { path: '/register', label: 'Registration' },
+    { path: '/register', label: 'Registration & Submission' },
     { path: '/', label: 'Contact', section: 'Contact' },
     { path: '/sponsors', label: 'Sponsers', section: '' },
   ];
