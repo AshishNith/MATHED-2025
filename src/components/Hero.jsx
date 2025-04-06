@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   const handleDownloadBrochure = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Brochure.pdf';
+    link.href = `${window.location.origin}/assets/Brochure.pdf`;
     link.download = 'MATHED2025_Brochure.pdf';
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
