@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/FlipCard.module.css';
+import Dilshad from "/Assets/Dilshad.jpg";
 
 const Committee = () => {
   const members = [
@@ -23,7 +24,7 @@ const Committee = () => {
     {
       position: 'Organizing Secretary',
       name: 'Dr. Dilshad Ahmad Khan',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/202.jpg',
+      image: Dilshad,
       email: 'dilshad@nith.ac.in',
       phone: '+91-94598-86738'
     },
