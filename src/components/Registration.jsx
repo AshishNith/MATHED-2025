@@ -59,7 +59,7 @@ const Registration = () => {
             <div className="flex-1">
               <h2 className="text-2xl font-semibold text-amber-600 mb-6 flex items-center">
                 <FaFileUpload className="text-amber-600 mr-3" />
-                Call for Papers & Submission Guidelines
+                  Submission Guidelines
               </h2>
               <p className="text-gray-600 mb-4">
                 We are pleased to invite high-quality research papers for presentation at the 3rd International Conference on Advances in Manufacturing, Thermal and Design Engineering (MATHED 2025).
@@ -73,10 +73,15 @@ const Registration = () => {
                 <li>Originality: Submissions must be original and not simultaneously submitted elsewhere</li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">Submission Process</h3>
+              <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">How to Submit</h3>
               <div className="bg-white rounded-lg p-4 border border-amber-200">
                 <ol className="list-decimal list-inside space-y-2 text-gray-600">
-                  <li>Prepare your manuscript as per the Springer formatting guidelines</li>
+                  <li>Prepare your manuscript as per the <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" 
+                       className="text-amber-600 hover:text-amber-700 ml-1" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                      Springer formatting guidelines
+                    </a></li>
                   <li>Visit the CMT submission portal: 
                     <a href="https://cmt3.research.microsoft.com/YourConference2025" 
                        className="text-amber-600 hover:text-amber-700 ml-1" 
@@ -94,7 +99,7 @@ const Registration = () => {
               </div>
               
               <div className="mt-6">
-                <a href="#" 
+                <a href="https://docs.google.com/document/d/1t3-8--xn0ryS1xOohyxjQBdcmeHyWJcBxUkbA9faFCI/edit?usp=sharing" 
                    className="inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors">
                   <FaFilePdf className="mr-2" />
                   Download Paper Format Template
