@@ -7,7 +7,7 @@ const Committee = () => {
   const members = [
     {
       position: 'Chief Patron',
-      name: 'Prof. H. M. Suryawanshi',
+      name: 'Prof. H. M. Suryawanshi',  
       title: 'Hon. Director, NIT Hamirpur',
       image: 'https://nith.ac.in/uploads/topics/hms16438810105577.jpg',
     },

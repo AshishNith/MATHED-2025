@@ -67,10 +67,12 @@ const Registration = () => {
               
               <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">Author Guidelines</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Paper Length: 10-12 pages (including references and appendices)</li>
-                <li>Format: Follow Springer's Conference Proceedings format</li>
+                <li>Paper Length: Minimum 10 and maximum 12 pages (including references and appendices)</li>
+                <li>Format: Please click below Download Link to download the Format for paper submission
+              <a href="https://docs.google.com/document/d/1t3-8--xn0ryS1xOohyxjQBdcmeHyWJcBxUkbA9faFCI/edit?usp=sharing" className="text-amber-600 hover:text-amber-700 ml-1" > Download Link</a>
+              </li>
                 <li>Language: All papers must be written in English</li>
-                <li>Originality: Submissions must be original and not simultaneously submitted elsewhere</li>
+                <li>Originality: Submissions must be original and not simultaneously submitted to another journal or conference.</li>
               </ul>
 
               <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">How to Submit</h3>
