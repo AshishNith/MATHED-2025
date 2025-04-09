@@ -43,7 +43,7 @@ const Registration = () => {
                 Submission Guidelines
               </h2>
               <p className="text-gray-600 mb-4">
-                We are pleased to invite high-quality research papers for presentation at the 3rd International Conference on Advances in Manufacturing, Thermal and Design Engineering (MATHED 2025). All paper submissions must be made electronically through the Microsoft Conference Management Toolkit (CMT) platform.
+                We are pleased to invite high-quality research papers for presentation at the 3rd International Conference on Advances in Manufacturing, Thermal and Design Engineering (MATHED 2025). 
               </p>
 
               <div className="bg-amber-50 p-4 rounded-lg mb-6">
