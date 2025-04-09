@@ -79,8 +79,8 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="flex-shrink-0 flex items-center"
           >
-            <Link to="/" className="text-xl font-bold text-amber-400 flex items-center space-x-2 hover:text-amber-300 transition-colors">
-              <img src="/Assets/logo.ico" alt="Logo" className="h-14 w-14 rounded-full border-2 border-amber-400" />
+            <Link to="/" className="text-2xl font-bold text-amber-600 flex items-center space-x-2 hover:text-amber-500 transition-colors">
+              <img src="/Assets/logo.ico" alt="Logo" className="h-14 w-14 rounded-full border-2 border-amber-600" />
               <span>MATHED 2025</span>
             </Link>
           </motion.div>
@@ -96,7 +96,7 @@ const Navbar = () => {
                 <Link
                   to={item.path}
                   onClick={() => handleNavClick(item)}
-                  className="px-3 py-2 text-sm font-medium text-amber-400 hover:text-amber-300 hover:bg-amber-500/10 transition-all rounded-md"
+                  className="px-3 py-2 text-base font-medium text-amber-600 hover:text-amber-500 hover:bg-amber-500/10 transition-all rounded-md"
                 >
                   {item.label}
                 </Link>
@@ -109,7 +109,7 @@ const Navbar = () => {
             <motion.button
               whileTap={{ scale: 0.95 }}
               onClick={toggleMenu}
-              className="text-amber-400 p-2 rounded-md hover:bg-amber-500/10 transition-colors"
+              className="text-amber-600 p-2 rounded-md hover:bg-amber-500/10 transition-colors"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -138,7 +138,7 @@ const Navbar = () => {
                 key={item.path + item.section}
                 to={item.path}
                 onClick={() => handleNavClick(item)}
-                className="block px-3 py-2 text-base font-medium text-amber-400 hover:text-amber-300 hover:bg-amber-500/10 rounded-md transition-all"
+                className="block px-3 py-2 text-lg font-medium text-amber-600 hover:text-amber-500 hover:bg-amber-500/10 rounded-md transition-all"
               >
                 {item.label}
               </Link>

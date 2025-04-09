@@ -52,7 +52,32 @@ const Registration = () => {
                   At least one author of each accepted paper must register for the conference and present the paper.
                 </p>
               </div>
-              
+              <div className="bg-white p-4 rounded-lg border border-amber-200 mb-6">
+                <h3 className="text-lg font-semibold text-amber-600 mb-2">Submission Platform</h3>
+                <p className="text-gray-600">
+                  All paper submissions must be made electronically through the Microsoft Conference Management Toolkit (CMT) platform.
+                </p>
+                <div className="mt-3">
+                  <a href="https://cmt3.research.microsoft.com/YourConference2025" 
+                     className="text-amber-600 hover:text-amber-700 underline"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    CMT Submission Portal
+                  </a>
+                </div>
+                <p className="text-sm text-gray-500 mt-2">
+                  Please create an account (if you don't have one), log in, and follow the instructions for submitting your manuscript.
+                </p>
+                <div className="mt-4 pt-4 border-t border-amber-100">
+                  <p className="text-xs text-gray-500 italic">
+                    The Microsoft CMT service was used for managing the peer-reviewing process for this conference. 
+                    This service was provided for free by Microsoft and they bore all expenses, including costs for 
+                    Azure cloud services as well as for software development and support.
+                  </p>
+                </div>
+              </div>
+
+
               <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">Author Guidelines</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
                 <li>Paper Length: Minimum 10 and maximum 12 pages (including references and appendices)</li>
