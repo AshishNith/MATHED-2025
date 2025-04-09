@@ -27,26 +27,7 @@ const Registration = () => {
           <div className="w-32 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-8"></div>
         </motion.div>
 
-        {/* Submission Procedure Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="p-6 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 backdrop-blur-sm"
-        >
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="flex-1">
-              <h2 className="text-2xl font-semibold text-amber-600 mb-6 flex items-center">
-                <FaFileUpload className="text-amber-600 mr-3" />
-                Submission Procedure
-              </h2>
-              <p className='text-gray-600'>
-                Authors are required to submit both their abstracts and full-length papers through the
-                Microsoft CMT tool using the provided link.
-              </p>
-            </div>
-          </div>
-        </motion.section>
+
 
         {/* Call for Papers Section */}
         <motion.section
@@ -59,32 +40,37 @@ const Registration = () => {
             <div className="flex-1">
               <h2 className="text-2xl font-semibold text-amber-600 mb-6 flex items-center">
                 <FaFileUpload className="text-amber-600 mr-3" />
-                  Submission Guidelines
+                Submission Guidelines
               </h2>
               <p className="text-gray-600 mb-4">
-                We are pleased to invite high-quality research papers for presentation at the 3rd International Conference on Advances in Manufacturing, Thermal and Design Engineering (MATHED 2025).
+                We are pleased to invite high-quality research papers for presentation at the 3rd International Conference on Advances in Manufacturing, Thermal and Design Engineering (MATHED 2025). All paper submissions must be made electronically through the Microsoft Conference Management Toolkit (CMT) platform.
               </p>
+
+              <div className="bg-amber-50 p-4 rounded-lg mb-6">
+                <h3 className="text-lg font-semibold text-amber-600 mb-2">Important Note</h3>
+                <p className="text-gray-600 mb-2">
+                  At least one author of each accepted paper must register for the conference and present the paper.
+                </p>
+              </div>
               
               <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">Author Guidelines</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-600">
                 <li>Paper Length: Minimum 10 and maximum 12 pages (including references and appendices)</li>
-                <li>Format: Please click below Download Link to download the Format for paper submission
-              <a href="https://docs.google.com/document/d/1t3-8--xn0ryS1xOohyxjQBdcmeHyWJcBxUkbA9faFCI/edit?usp=sharing" className="text-amber-600 hover:text-amber-700 ml-1" > Download Link</a>
-              </li>
+                <li>Format: Authors must prepare their manuscripts according to Springer's Conference Proceedings format
+                  <a href="https://docs.google.com/document/d/1t3-8--xn0ryS1xOohyxjQBdcmeHyWJcBxUkbA9faFCI/edit?usp=sharing" 
+                     className="text-amber-600 hover:text-amber-700 ml-1">
+                    Download Format Template
+                  </a>
+                </li>
                 <li>Language: All papers must be written in English</li>
-                <li>Originality: Submissions must be original and not simultaneously submitted to another journal or conference.</li>
+                <li>Originality: Submissions must be original and not simultaneously submitted to another journal or conference</li>
               </ul>
 
               <h3 className="text-lg font-semibold text-amber-600 mt-6 mb-3">How to Submit</h3>
               <div className="bg-white rounded-lg p-4 border border-amber-200">
                 <ol className="list-decimal list-inside space-y-2 text-gray-600">
-                  <li>Prepare your manuscript as per the <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" 
-                       className="text-amber-600 hover:text-amber-700 ml-1" 
-                       target="_blank" 
-                       rel="noopener noreferrer">
-                      Springer formatting guidelines
-                    </a></li>
-                  <li>Visit the CMT submission portal: 
+                  <li>Prepare your manuscript as per the Springer formatting guidelines</li>
+                  <li>Go to the CMT submission portal: 
                     <a href="https://cmt3.research.microsoft.com/YourConference2025" 
                        className="text-amber-600 hover:text-amber-700 ml-1" 
                        target="_blank" 
@@ -94,8 +80,8 @@ const Registration = () => {
                   </li>
                   <li>Register/log in to CMT</li>
                   <li>Click on "Create New Submission"</li>
-                  <li>Fill in the required details (title, abstract, authors, keywords, etc.)</li>
-                  <li>Upload your manuscript in PDF format</li>
+                  <li>Fill in the required details (title, abstract, author list, keywords, subject areas, etc.)</li>
+                  <li>Upload the PDF of your manuscript</li>
                   <li>Submit and confirm your submission</li>
                 </ol>
               </div>
