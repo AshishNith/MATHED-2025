@@ -1,11 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import brochurePdf from '/Assets/MATHED2025_Brochure.pdf'
 
 const Hero = () => {
   const handleDownloadBrochure = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Brochure.pdf';
+    link.href = brochurePdf;
     link.download = 'MATHED2025_Brochure.pdf';
     document.body.appendChild(link);
     link.click();
@@ -83,14 +84,12 @@ const Hero = () => {
                   Register Now
                 </motion.button>
               </Link>
-              <motion.button
+              <button
                 onClick={handleDownloadBrochure}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
                 className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-amber-500/30 text-amber-400 rounded-lg font-semibold hover:bg-amber-500/10"
               >
-                Download brochure 
-              </motion.button>
+                Download brochure
+              </button>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
