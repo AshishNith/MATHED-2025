@@ -1,12 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/FlipCard.module.css';
+import Dilshad from "/Assets/Dilshad.jpg";
 
 const Committee = () => {
   const members = [
     {
       position: 'Chief Patron',
-      name: 'Prof. H. M. Suryawanshi',
+      name: 'Prof. H. M. Suryawanshi',  
       title: 'Hon. Director, NIT Hamirpur',
       image: 'https://nith.ac.in/uploads/topics/hms16438810105577.jpg',
     },
@@ -23,7 +24,7 @@ const Committee = () => {
     {
       position: 'Organizing Secretary',
       name: 'Dr. Dilshad Ahmad Khan',
-      image: 'https://portfolios.nith.ac.in/uploads/member_details/202.jpg',
+      image: Dilshad,
       email: 'dilshad@nith.ac.in',
       phone: '+91-94598-86738'
     },
