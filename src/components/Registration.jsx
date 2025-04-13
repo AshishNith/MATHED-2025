@@ -122,36 +122,39 @@ const Registration = () => {
           </div>
         </motion.section>
 
-        {/* Registration Details Section */}
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="p-6 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 backdrop-blur-sm"
-        >
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="flex-1">
-              <h2 className="text-2xl font-semibold text-amber-600 mb-6 flex items-center">
-                <FaCreditCard className="text-amber-600 mr-3" />
-                Registration Details
-              </h2>
-              <p className='text-gray-600'>
-                Following the acceptance of the full-text paper, participants are required to pay the
-                non-refundable registration fee through SBI Collect.
-              </p>
-              <ul className="list-disc list-inside mt-4 space-y-2 text-gray-600">
-                <li>Visit the SBI Collect website or scan the QR code.</li>
-                <li>Select <strong>Educational Institution</strong> and search for <strong>NIT Hamirpur</strong>.</li>
-                <li>Choose <strong>WORKSHOP FDP STC CONFERENCE</strong> as the payment category.</li>
-                <li>Fill in the required information and proceed with payment.</li>
-                <li>Download or print the e-receipt for records.</li>
-              </ul>
-            </div>
-            <div className="w-48 h-48 bg-gradient-to-br from-white to-gray-100 p-3 rounded-lg shadow-lg flex-shrink-0 self-center">
-              <img src={qrImage} alt="SBI Collect QR Code" className="w-full h-full object-contain" />
-            </div>
-          </div>
-        </motion.section>
+       {/* Registration Details Section */}
+<motion.section
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="p-6 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 backdrop-blur-sm"
+>
+  <div className="flex flex-col md:flex-row gap-8">
+    <div className="flex-1">
+      <h2 className="text-2xl font-semibold text-amber-600 mb-6 flex items-center">
+        <FaCreditCard className="text-amber-600 mr-3" />
+        Registration Details
+      </h2>
+
+      <p className="text-gray-600 mb-4">
+        Registration fees are <strong>non-refundable</strong>. Following the acceptance of the full-text paper, participants are required to complete the payment process through <strong>SBI Collect</strong> only. Any payment made through other channels will not be considered valid.
+      </p>
+
+      <ul className="list-disc list-inside mt-4 space-y-2 text-gray-600">
+        <li>Visit the SBI Collect website or scan the QR code.</li>
+        <li>Select <strong>Educational Institution</strong> and search for <strong>NIT Hamirpur</strong>.</li>
+        <li>Choose <strong>WORKSHOP FDP STC CONFERENCE</strong> as the payment category.</li>
+        <li>Fill in the required information and proceed with payment.</li>
+        <li>Download or print the e-receipt for records.</li>
+      </ul>
+    </div>
+
+    <div className="w-48 h-48 bg-gradient-to-br from-white to-gray-100 p-3 rounded-lg shadow-lg flex-shrink-0 self-center">
+      <img src={qrImage} alt="SBI Collect QR Code" className="w-full h-full object-contain" />
+    </div>
+  </div>
+</motion.section>
+
 
         {/* Fee Structure */}
         <motion.div
