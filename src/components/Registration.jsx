@@ -46,12 +46,7 @@ const Registration = () => {
                 We are pleased to invite high-quality research papers for presentation at the 3rd International Conference on Advances in Manufacturing, Thermal and Design Engineering (MATHED 2025). 
               </p>
 
-              <div className="bg-amber-50 p-4 rounded-lg mb-6">
-                <h3 className="text-lg font-semibold text-amber-600 mb-2">Important Note</h3>
-                <p className="text-gray-600 mb-2">
-                  At least one author of each accepted paper must register for the conference and present the paper.
-                </p>
-              </div>
+             
               <div className="bg-white p-4 rounded-lg border border-amber-200 mb-6">
                 <h3 className="text-lg font-semibold text-amber-600 mb-2">Submission Platform</h3>
                 <p className="text-gray-600">
@@ -135,6 +130,14 @@ const Registration = () => {
                 <FaCreditCard className="text-amber-600 mr-3" />
                 Registration Details
               </h2>
+
+              <div className="bg-amber-50 p-4 rounded-lg mb-6">
+                <h3 className="text-lg font-semibold text-amber-600 mb-2">Important Note</h3>
+                <p className="text-gray-600 mb-2">
+                  At least one author of each accepted paper must register for the conference and present the paper.
+                </p>
+              </div>
+
               <p className='text-gray-600'>
                 Following the acceptance of the full-text paper, participants are required to pay the
                 non-refundable registration fee through SBI Collect.
