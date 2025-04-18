@@ -53,7 +53,7 @@ const Registration = () => {
                   All paper submissions must be made electronically through the Microsoft Conference Management Toolkit (CMT) platform.
                 </p>
                 <div className="mt-3">
-                  <a href="https://cmt3.research.microsoft.com/YourConference2025" 
+                  <a href="https://cmt3.research.microsoft.com/MATHED2025/Submission/Index" 
                      className="text-amber-600 hover:text-amber-700 underline"
                      target="_blank"
                      rel="noopener noreferrer">
@@ -91,7 +91,7 @@ const Registration = () => {
                 <ol className="list-decimal list-inside space-y-2 text-gray-600">
                   <li>Prepare your manuscript as per the Springer formatting guidelines</li>
                   <li>Go to the CMT submission portal: 
-                    <a href="https://cmt3.research.microsoft.com/YourConference2025" 
+                    <a href="https://cmt3.research.microsoft.com/MATHED2025/Submission/Index" 
                        className="text-amber-600 hover:text-amber-700 ml-1" 
                        target="_blank" 
                        rel="noopener noreferrer">
