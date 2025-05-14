@@ -49,7 +49,7 @@ const Navbar = () => {
     { path: '/', label: 'Important Dates', section: 'importantDate' },
     { path: '/register', label: 'Registration & Submission' },
     { path: '/', label: 'Contact', section: 'Contact' },
-    { path: '/sponsors', label: 'Sponsers', section: '' },
+    { path: '/sponsors', label: 'Sponsors', section: '' },
   ];
 
   const handleNavClick = async (item) => {
