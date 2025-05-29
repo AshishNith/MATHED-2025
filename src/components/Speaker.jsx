@@ -57,7 +57,7 @@ const Speaker = () => {
         <img 
           src={speaker.image} 
           alt={speaker.name}
-          className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain object-center hover:scale-105 transition-transform duration-500"
         />
       </div>
       <div className="p-6 flex flex-col justify-center">
