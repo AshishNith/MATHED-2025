@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import anandParey from "../../public/Assets/Speakers/AnandParey.png"
 import ProfSudhakarSubudhi from "../../public/Assets/Speakers/ProfSudhakarSubudhi.png"
+const MRahman = "https://profmrahman.com/wp-content/uploads/2014/08/index.jpg"
 
 const speakers = [
   {
@@ -22,13 +23,16 @@ const speakers = [
     websiteLink:"https://iitr.ac.in/Departments/Mechanical%20and%20Industrial%20Engineering%20Department/People/Faculty/100594.html",
     info:"Natural and Forced convection, Natural Ventilation, Unconventional energy systems, Nanofluids, Thermoregulatory mechanism of human body"
   },
-  // {
-  //   id: 3,
-  //   name: 'Prof. Emma Williams',
-  //   title: 'Head of Mathematics Department',
-  //   university: 'Oxford University',
-  //   image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=300'
-  // }
+  {
+    id: 3,
+    name: 'Prof. Dr. Mustafizur Rahman',
+    title: 'Professor (Retired)',
+    university: 'National University of Singapore, Dept. of Mechanical Engineering',
+    image: MRahman,
+    websiteLink: "https://profmrahman.com/",
+    info: "Pioneer in micro/nano machining research, first to propose compound machining processes combining conventional and non-conventional methods. Established the groundbreaking 'extrusion-like mechanism zone' concept and authored the seminal book 'Advanced Machining Processes'. Director of Mikrotools Pte Ltd."
+  },
+  
 ];
 
 const Speaker = () => {
