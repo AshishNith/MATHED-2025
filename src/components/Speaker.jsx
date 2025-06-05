@@ -5,6 +5,16 @@ import ProfSudhakarSubudhi from "../../public/Assets/Speakers/ProfSudhakarSubudh
 const MRahman = "https://profmrahman.com/wp-content/uploads/2014/08/index.jpg"
 
 const speakers = [
+  
+  {
+    id: 3,
+    name: 'Prof. Dr. Mustafizur Rahman',
+    title: 'Professor (Retired)',
+    university: 'National University of Singapore, Dept. of Mechanical Engineering',
+    image: MRahman,
+    websiteLink: "https://profmrahman.com/",
+    info: "Pioneer in micro/nano machining research, first to propose compound machining processes combining conventional and non-conventional methods. Established the groundbreaking 'extrusion-like mechanism zone' concept and authored the seminal book 'Advanced Machining Processes'. Director of Mikrotools Pte Ltd."
+  },
   {
     id: 1,
     name: 'Dr. Anand Parey',
@@ -23,15 +33,7 @@ const speakers = [
     websiteLink:"https://iitr.ac.in/Departments/Mechanical%20and%20Industrial%20Engineering%20Department/People/Faculty/100594.html",
     info:"Natural and Forced convection, Natural Ventilation, Unconventional energy systems, Nanofluids, Thermoregulatory mechanism of human body"
   },
-  {
-    id: 3,
-    name: 'Prof. Dr. Mustafizur Rahman',
-    title: 'Professor (Retired)',
-    university: 'National University of Singapore, Dept. of Mechanical Engineering',
-    image: MRahman,
-    websiteLink: "https://profmrahman.com/",
-    info: "Pioneer in micro/nano machining research, first to propose compound machining processes combining conventional and non-conventional methods. Established the groundbreaking 'extrusion-like mechanism zone' concept and authored the seminal book 'Advanced Machining Processes'. Director of Mikrotools Pte Ltd."
-  },
+  
   
 ];
 
@@ -46,46 +48,46 @@ const Speaker = () => {
           <div className="w-32 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-8"></div>
         </motion.div>
 
-       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
-  {speakers.map((speaker) => (
-    <motion.div 
-      key={speaker.id}
-      initial={{opacity: 0, y: 20}}
-      whileInView={{opacity: 1, y: 0}}
-      viewport={{ once: true }}
-      transition={{duration: 0.5}}
-      className="w-full max-w-md bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl overflow-hidden shadow-2xl"
-    >
-      <div className="relative h-72 md:h-80 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 mix-blend-overlay z-10"></div>
-        <img 
-          src={speaker.image} 
-          alt={speaker.name}
-          className="w-full h-full object-contain object-center hover:scale-105 transition-transform duration-500"
-        />
-      </div>
-      <div className="p-6 flex flex-col justify-center">
-        <h3 className="text-2xl font-bold text-amber-800 mb-2">{speaker.name}</h3>
-        <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mb-4"></div>
-        <p className="text-lg text-amber-700 mb-1">{speaker.title}</p>
-        <p className="text-md text-amber-600">{speaker.university}</p>
-        <p className="mt-4 text-amber-700/80 leading-relaxed text-sm">
-          {speaker.info}
-          </p>
-        {speaker.websiteLink && (
-          <a 
-            href={speaker.websiteLink} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="mt-4 inline-block text-amber-700 hover:text-amber-900 text-sm underline"
-          >
-            View Profile
-          </a>
-        )}
-      </div>
-    </motion.div>
-  ))}
-</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
+          {speakers.map((speaker) => (
+            <motion.div 
+              key={speaker.id}
+              initial={{opacity: 0, y: 20}}
+              whileInView={{opacity: 1, y: 0}}
+              viewport={{ once: true }}
+              transition={{duration: 0.5}}
+              className="w-full max-w-sm bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <div className="relative h-72 md:h-80 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 mix-blend-overlay z-10"></div>
+                <img 
+                  src={speaker.image} 
+                  alt={speaker.name}
+                  className="w-full h-full object-contain object-center hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="p-6 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-amber-800 mb-2">{speaker.name}</h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mb-4"></div>
+                <p className="text-lg text-amber-700 mb-1">{speaker.title}</p>
+                <p className="text-md text-amber-600">{speaker.university}</p>
+                <p className="mt-4 text-amber-700/80 leading-relaxed text-sm">
+                  {speaker.info}
+                  </p>
+                {speaker.websiteLink && (
+                  <a 
+                    href={speaker.websiteLink} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block text-amber-700 hover:text-amber-900 text-sm underline"
+                  >
+                    View Profile
+                  </a>
+                )}
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
       </div>
     </section>
