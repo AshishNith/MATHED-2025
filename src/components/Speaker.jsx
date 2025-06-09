@@ -35,6 +35,7 @@ const speakers = [
   },
   
   
+  
 ];
 
 const Speaker = () => {
