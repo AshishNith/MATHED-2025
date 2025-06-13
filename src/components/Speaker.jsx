@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import anandParey from "../../public/Assets/Speakers/AnandParey.png"
 import ProfSudhakarSubudhi from "../../public/Assets/Speakers/ProfSudhakarSubudhi.png"
 const MRahman = "https://profmrahman.com/wp-content/uploads/2014/08/index.jpg"
+const SalmanAbuMansor = "https://directory.usm.my/photo.php?direktoristaf/photo/mesalman";
 
 const speakers = [
   
@@ -33,9 +34,17 @@ const speakers = [
     websiteLink:"https://iitr.ac.in/Departments/Mechanical%20and%20Industrial%20Engineering%20Department/People/Faculty/100594.html",
     info:"Natural and Forced convection, Natural Ventilation, Unconventional energy systems, Nanofluids, Thermoregulatory mechanism of human body"
   },
-  
-  
-  
+  // {
+  //   id: 4,
+  //   name: 'Dr. Mohd Salman Abu Mansor',
+  //   title: 'Associate Professor',
+  //   university: 'School of Mechanical Engineering, USM',
+  //   image: SalmanAbuMansor,
+  //   websiteLink:"https://experts.usm.my/cv_path/MGQzMmQwYjJiZWYwZWQyZjY3NGY1ZWVmN2Q1NmI4ODg3MWMxZWZmYzY0NWI1MTZhNDBmMzc1YzZiM2Y0MTM5MTY1NDM2NDJmYzYxMDY4YTY1Y2ExODNmMTg0ZmQ1NWY0Y2ZmZGYyMTJmZTlmM2YyNmNjYjI3OTUyYzg1NmJiNmRYY2lQcHE4VHRJK1dTaHhFZ1JFN3p5N29RLzkyOGhoSm1lWW5VV3JFTmVFPQ==/1",
+  //   info:"His research interests include Computer Aided Design/Computer Aided Manufacturing (CAD/CAM), Computer Aided Process Planning (CAPP), Reverse Engineering (RE), Product Design & Development (PDD) and Advanced Manufacturing Technology & Systems Management (AMTSM). Personal Website: http://productdesign.eng.usm.my"
+  // },
+
+
 ];
 
 const Speaker = () => {
