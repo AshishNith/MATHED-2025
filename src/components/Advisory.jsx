@@ -69,7 +69,8 @@ const Advisory = () => {
     { "name": "Dr. Binnur Sagbas", "affiliation": "Yildiz Technical University, Turkey" },
     { "name": "Dr. Ana Pilar Valerga", "affiliation": "University of Cádiz, Spain" },
     { "name": "Dr. Roque Aguado Molina", "affiliation": "Universidad de Jaén, Spain" },
-    { "name": "Dr. Mohd Salman Abu Mansor", "affiliation": "School of Mechanical Engineering, USM" }
+    { "name": "Dr. Mohd Salman Abu Mansor", "affiliation": "School of Mechanical Engineering, USM" },
+    { "name": "Dr. Muhammad Rashid", "affiliation": "Institute of Warwick, UK" },
   ];
 
   const DisplayCommittee = ({ members, isExpanded, toggleExpand }) => {
