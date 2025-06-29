@@ -13,7 +13,7 @@ const Advisory = () => {
     { "name": "Prof. Andallib Tariq", "affiliation": "IIT Roorkee" },
     { "name": "Prof. Rajiv Tiwari", "affiliation": "IIT Guwahati" },
     { "name": "Prof. Raj K. Pandey", "affiliation": "IIT Delhi" },
-    { "name": "Prof. M.F. Wan", "affiliation": "NIT Srinagar" },
+    { "name": "Prof. M.F. Wani", "affiliation": "NIT Srinagar" },
     { "name": "Prof. S. Aravindan", "affiliation": "IIT Delhi" },
     { "name": "Prof. Naveen Kumar", "affiliation": "IIT Ropar" },
     { "name": "Prof. Rajiv Kumar", "affiliation": "IIT Mandi" },
@@ -71,6 +71,8 @@ const Advisory = () => {
     { "name": "Dr. Roque Aguado Molina", "affiliation": "Universidad de Jaén, Spain" },
     { "name": "Dr. Mohd Salman Abu Mansor", "affiliation": "School of Mechanical Engineering, USM" },
     { "name": "Dr. Muhammad Rashid", "affiliation": "Institute of Warwick, UK" },
+    { "name": "Dr. Javier Munguia", "affiliation": "Institute of Warwick, UK" },
+    { "name": "Md Irfanul Haque Siddiqui", "affiliation": "King Saud University, Saudi Arabia" },
   ];
 
   const DisplayCommittee = ({ members, isExpanded, toggleExpand }) => {
