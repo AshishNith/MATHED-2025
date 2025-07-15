@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 const ImportantDates = () => {
     const dates = [
-        { event: 'Abstract Submission Deadline', date: '15/07/2025' },
-        { event: 'Notification of Acceptance of Abstract', date: '31/07/2025' },
-        { event: 'Full-Text Paper Submission Deadline', date: '10/08/2025' },
-        { event: 'Notification of Acceptance of Paper', date: '20/09/2025' },
-        { event: 'Final Paper Submission Deadline', date: '20/10/2025' },
-        { event: 'Last date of Registration', date: '20/11/2025' },
+        { event: 'Abstract Submission Deadline', date: '15/08/2025' },
+        { event: 'Notification of Acceptance of Abstract', date: '31/08/2025' },
+        { event: 'Full-Text Paper Submission Deadline', date: '10/09/2025' },
+        { event: 'Notification of Acceptance of Paper', date: '20/10/2025' },
+        { event: 'Final Paper Submission Deadline', date: '20/11/2025' },
+        { event: 'Last date of Registration', date: '20/12/2025' },
     ];
 
     return (
