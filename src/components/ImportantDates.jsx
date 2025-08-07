@@ -63,7 +63,7 @@ const ImportantDates = () => {
                         <div className="p-8">
                             <h3 className="text-2xl font-bold text-amber-600 mb-6">Note:</h3>
                             <ul className="list-disc pl-6 space-y-4 text-gray-700">
-                                <li className="leading-relaxed">Select papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published.</li>
+                                <li className="leading-relaxed">Selected papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published.</li>
                                 <li className="leading-relaxed">Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.</li>
                                 <li className="leading-relaxed text-red-600">Plagiarism must be strictly avoided, and the similarity index should be less than 20%. Manuscripts exceeding this limit may be rejected at any stage of the conference-during peer review, publication, or scheduling.</li>
                             </ul>

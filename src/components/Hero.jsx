@@ -95,13 +95,20 @@ const Hero = () => {
             {/* Springer Logo Card */}
             <div className="flex justify-center mt-4 sm:mt-6">
               <div className="h-20 sm:h-24 w-48 sm:w-56 p-4 rounded-lg bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex flex-col items-center justify-center">
-              <p className="text-amber-400 mb-2 text-xs font-medium">Powered by Springer</p>
+              <p className="text-amber-400 mb-2 text-xs font-medium">Publishing Partner Springer </p>
                 <img 
                   src="https://res.cloudinary.com/dinhcaf2c/image/upload/v1754501406/Screenshot_2025-08-06_225945_l2fzf4.png"
                   alt="Springer"
                   className="h-8 sm:h-10 w-auto object-contain mb-1"
                 />
               </div>
+            </div>
+
+            {/* Springer Publishing Information */}
+            <div className="mt-4 sm:mt-6 max-w-3xl mx-auto">
+              <p className="text-center text-sm sm:text-base font-bold bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 bg-clip-text text-transparent px-4 py-2 rounded-lg border border-amber-500/30 bg-amber-500/10 backdrop-blur-sm">
+                Springer will publish the selected proceedings of MATHED 2025 as part of the book series Lecture Notes in Mechanical Engineering.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
