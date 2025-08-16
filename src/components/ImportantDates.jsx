@@ -3,13 +3,22 @@ import { motion } from 'framer-motion';
 
 const ImportantDates = () => {
     const dates = [
-        { event: 'Abstract Submission Deadline', date: '15/08/2025' },
-        { event: 'Notification of Acceptance of Abstract', date: '31/08/2025' },
-        { event: 'Full-Text Paper Submission Deadline', date: '10/09/2025' },
-        { event: 'Notification of Acceptance of Paper', date: '20/10/2025' },
+            { event: 'Abstract Submission Deadline', date: '15/08/2025' },
+            { event: 'Notification of Acceptance of Abstract', date: '31/08/2025' },
+        { event: 'Full-length paper (Manuscript) Paper Submission Deadline', date: '10/09/2025' },
+        { event: 'Notification of Acceptance of full-length paper (Manuscript)', date: '20/10/2025' },
         { event: 'Final Paper Submission Deadline', date: '20/11/2025' },
         { event: 'Last date of Registration', date: '20/12/2025' },
     ];
+
+    // Helper to check if date is expired
+    const isExpired = (dateStr) => {
+        const [day, month, year] = dateStr.split('/').map(Number);
+        const dateObj = new Date(year, month - 1, day);
+        const today = new Date();
+        today.setHours(0,0,0,0);
+        return dateObj < today;
+    };
 
     return (
         <div id='importantDate' className="relative py-20 px-4 bg-gray-50">
@@ -49,7 +58,13 @@ const ImportantDates = () => {
                                 className="flex justify-between p-5 border-b border-amber-200 last:border-b-0 hover:bg-amber-100/50 transition-colors"
                             >
                                 <div className="flex-1 font-medium text-gray-700">{item.event}</div>
-                                <div className="flex-none pl-4 text-amber-600 font-semibold">{item.date}</div>
+                                <div className="flex-none pl-4 font-semibold">
+                                    {isExpired(item.date) ? (
+                                       <p><span className="text-red-500 line-through">{item.date} </span><span>(Closed)</span></p>
+                                    ) : (
+                                        <span className="text-amber-600">{item.date}</span>
+                                    )}
+                                </div>
                             </motion.div>
                         ))}
                     </motion.div>
