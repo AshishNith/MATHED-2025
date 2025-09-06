@@ -6,22 +6,32 @@ const Sponsors = () => {
     {
       tier: "Platinum Sponsors",
       sponsors: [
-        { name: "Sponsor Name 1", logo: "Logo 1" },
-        { name: "Sponsor Name 2", logo: "Logo 2" }
+        {
+          name: "Sh. Shashikant Thakur, Branch Head, Branch -B SBI Life Hamirpur (HP) Mob.98050-35500",
+          logo: (
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/projects/404/064230224725583.6810766ed08f6.png"
+              alt="SBI Life Logo"
+              className="max-h-32 max-w-full object-contain"
+            />
+          )
+        },
+        // { name: "Sponsor Name 1", logo: "Logo 1" },
+        // { name: "Sponsor Name 2", logo: "Logo 2" }
       ]
     },
-    {
-      tier: "Gold Sponsors",
-      sponsors: [
-        { name: "Sponsor Name 3", logo: "Logo 3" }
-      ]
-    },
-    {
-      tier: "Silver Sponsors",
-      sponsors: [
-        { name: "Sponsor Name 4", logo: "Logo 4" }
-      ]
-    }
+    // {
+    //   tier: "Gold Sponsors",
+    //   sponsors: [
+    //     { name: "Sponsor Name 3", logo: "Logo 3" }
+    //   ]
+    // },
+    // {
+    //   tier: "Silver Sponsors",
+    //   sponsors: [
+    //     { name: "Sponsor Name 4", logo: "Logo 4" }
+    //   ]
+    // }
   ];
 
   return (
