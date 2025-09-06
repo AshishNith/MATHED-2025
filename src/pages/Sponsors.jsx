@@ -65,7 +65,7 @@ const Sponsors = () => {
               transition={{ duration: 0.5, delay: tierIndex * 0.2 }}
               className="space-y-8"
             >
-              <h2 className="text-2xl font-semibold text-amber-600 text-center">{tier.tier}</h2>
+              {/* <h2 className="text-2xl font-semibold text-amber-600 text-center">{tier.tier}</h2> */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {tier.sponsors.map((sponsor, index) => (
                   <motion.div
@@ -77,7 +77,7 @@ const Sponsors = () => {
                       {sponsor.logo}
                     </div>
                     <h3 className="text-xl font-semibold text-gray-800">{sponsor.name}</h3>
-                    <p className="text-amber-600 mt-2">{tier.tier.slice(0, -1)}</p>
+                    {/* <p className="text-amber-600 mt-2">{tier.tier.slice(0, -1)}</p> */}
                   </motion.div>
                 ))}
               </div>
