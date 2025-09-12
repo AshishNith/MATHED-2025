@@ -6,16 +6,15 @@ const ImportantDates = () => {
         { 
             event: (
                 <>
-                    Abstract Submission Deadline<br /><br /><span className=" px-2 -mx-2 py-1 text-amber-700 font-extrabold rounded">Authors may directly submit their full-length papers until 10 September 2025</span>
+                    Abstract Submission Deadline<br /><br /><span className=" px-2 -mx-2 py-1 text-amber-700 font-extrabold rounded">Authors may directly submit their full-length papers until 15 October 2025</span>
                 </>
             ),
             date: '15/08/2025'
         },
         { event: 'Notification of Acceptance of Abstract', date: '31/08/2025' },
-        { event: 'Full-length Paper (Manuscript) Submission Deadline', date: '10/09/2025' },
-        { event: 'Notification of Acceptance of full-length paper (Manuscript)', date: '20/10/2025' },
-        { event: 'Final Paper Submission Deadline', date: '20/11/2025' },
-        { event: 'Last date of Registration', date: '20/12/2025' },
+        { event: 'Full-length Paper (Manuscript) Submission Deadline', date: '15/10/2025' },
+        { event: 'Notification of Acceptance of full-length paper (Manuscript)', date: '10/11/2025' },
+        { event: 'Last date of Registration & Final Paper Submission Deadline', date: '20/11/2025' },
     ];
 
     // Helper to check if date is expired
