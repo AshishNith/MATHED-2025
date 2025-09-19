@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Registration from './components/Registration'
 import Committee from './pages/Commitee'
 import Sponsors from './pages/Sponsors'
+import ImportantDatesPopup from './components/ImportantDatesPopup'
 
 const BackgroundPattern = () => (
   <div className="fixed inset-0 -z-10 bg-gray-50">
@@ -40,6 +41,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
+        <ImportantDatesPopup />
       </div>
     </BrowserRouter>
   )
