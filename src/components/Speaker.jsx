@@ -34,6 +34,15 @@ const speakers = [
     websiteLink:"https://iitr.ac.in/Departments/Mechanical%20and%20Industrial%20Engineering%20Department/People/Faculty/100594.html",
     info:"Natural and Forced convection, Natural Ventilation, Unconventional energy systems, Nanofluids, Thermoregulatory mechanism of human body"
   },
+  {
+    id: 4,
+    name: 'Dr. Bansidhar Gouda',
+    title: 'Chief Manager (Design), Aero Engine Research and Design Center (AERDC)',
+    university: 'Hindustan Aeronautics Limited (HAL), Bengaluru',
+    image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=pDhqaf8AAAAJ&citpid=1',
+    websiteLink: '',
+    info: "Over 18 years at HAL, Dr. Gouda specializes in aero engine test facility design, acoustics, bearings, and noise control. He holds a PhD from IIT Delhi and is a Life Member of the Acoustic Society of India."
+  },
   // {
   //   id: 4,
   //   name: 'Dr. Mohd Salman Abu Mansor',
