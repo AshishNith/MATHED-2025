@@ -13,7 +13,7 @@ const ImportantDatesPopup = () => {
         { event: 'Notification of Acceptance of Abstract', date: '31/08/2025' },
         { event: 'Full-length Paper (Manuscript) Submission Deadline', date: '15/10/2025' },
         { event: 'Notification of Acceptance of full-length paper (Manuscript)', date: '10/11/2025' },
-        { event: 'Last date of Registration & Final Paper Submission Deadline', date: '20/11/2025' },
+        { event: 'Last date of Registration & Final Paper Submission Deadline', date: '10/12/2025' },
     ];
 
     // Helper to check if date is expired
