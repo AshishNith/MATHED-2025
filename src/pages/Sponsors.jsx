@@ -16,6 +16,16 @@ const Sponsors = () => {
             />
           )
         },
+        {
+          name: "Janatics ",
+          logo: (
+            <img
+              src="http://www.janatics.com/public/web/img/janatics_new.png"
+              alt="Janatics Logo"
+              className="max-h-32 max-w-full object-contain"
+            />
+          )
+        },
         // { name: "Sponsor Name 1", logo: "Logo 1" },
         // { name: "Sponsor Name 2", logo: "Logo 2" }
       ]

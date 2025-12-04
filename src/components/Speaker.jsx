@@ -4,6 +4,7 @@ import anandParey from "../../public/Assets/Speakers/AnandParey.png"
 import ProfSudhakarSubudhi from "../../public/Assets/Speakers/ProfSudhakarSubudhi.png"
 const MRahman = "https://profmrahman.com/wp-content/uploads/2014/08/index.jpg"
 const SalmanAbuMansor = "https://directory.usm.my/photo.php?direktoristaf/photo/mesalman";
+import RKBhardwaj from "../../public/Assets/Speakers/RKBhardwaj.jpeg"
 
 const speakers = [
   
@@ -43,15 +44,15 @@ const speakers = [
     websiteLink: '',
     info: "Over 18 years at HAL, Dr. Gouda specializes in aero engine test facility design, acoustics, bearings, and noise control. He holds a PhD from IIT Delhi and is a Life Member of the Acoustic Society of India."
   },
-  // {
-  //   id: 4,
-  //   name: 'Dr. Mohd Salman Abu Mansor',
-  //   title: 'Associate Professor',
-  //   university: 'School of Mechanical Engineering, USM',
-  //   image: SalmanAbuMansor,
-  //   websiteLink:"https://experts.usm.my/cv_path/MGQzMmQwYjJiZWYwZWQyZjY3NGY1ZWVmN2Q1NmI4ODg3MWMxZWZmYzY0NWI1MTZhNDBmMzc1YzZiM2Y0MTM5MTY1NDM2NDJmYzYxMDY4YTY1Y2ExODNmMTg0ZmQ1NWY0Y2ZmZGYyMTJmZTlmM2YyNmNjYjI3OTUyYzg1NmJiNmRYY2lQcHE4VHRJK1dTaHhFZ1JFN3p5N29RLzkyOGhoSm1lWW5VV3JFTmVFPQ==/1",
-  //   info:"His research interests include Computer Aided Design/Computer Aided Manufacturing (CAD/CAM), Computer Aided Process Planning (CAPP), Reverse Engineering (RE), Product Design & Development (PDD) and Advanced Manufacturing Technology & Systems Management (AMTSM). Personal Website: http://productdesign.eng.usm.my"
-  // },
+  {
+    id: 5,
+    name: 'Dr. R.K. Bhardwaj',
+    title: 'Group Head',
+    university: 'MD&EG, DEAL, DRDO',
+    image: RKBhardwaj,
+    websiteLink:"https://www.linkedin.com/in/dr-rakesh-bhardwaj-44b1a017/?originalSubdomain=in",
+    info:"Micro and nano fabrication of electromechanical systems for defence applications"
+  },
 
 
 ];
