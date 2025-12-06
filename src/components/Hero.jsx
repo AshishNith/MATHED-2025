@@ -92,15 +92,28 @@ const Hero = () => {
               </button>
             </div>
 
-            {/* Springer Logo Card */}
-            <div className="flex justify-center mt-4 sm:mt-6">
-              <div className="h-20 sm:h-24 w-48 sm:w-56 p-4 rounded-lg bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex flex-col items-center justify-center">
-              <p className="text-amber-400 mb-2 text-xs font-medium">Publishing Partner Springer </p>
-                <img 
-                  src="https://res.cloudinary.com/dinhcaf2c/image/upload/v1754501406/Screenshot_2025-08-06_225945_l2fzf4.png"
-                  alt="Springer"
-                  className="h-8 sm:h-10 w-auto object-contain mb-1"
-                />
+            {/* Publishing Partners */}
+            <div className="mt-4 sm:mt-6">
+              <p className="text-amber-400 text-sm sm:text-base font-semibold mb-3">Publishing Partners</p>
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+                {/* Springer Logo Card */}
+                <div className="h-20 sm:h-24 w-48 sm:w-56 p-4 rounded-lg bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex items-center justify-center">
+                  <img 
+                    src="https://res.cloudinary.com/dinhcaf2c/image/upload/v1754501406/Screenshot_2025-08-06_225945_l2fzf4.png"
+                    alt="Springer"
+                    className="h-10 sm:h-12 w-auto object-contain"
+                  />
+                </div>
+
+                {/* ISBN Card */}
+                <div className="h-20 sm:h-24 w-48 sm:w-56 p-4 rounded-lg bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex flex-col items-center justify-center gap-1">
+                  <img 
+                    src="https://isbn.gov.in/assets/images/isbn.png"
+                    alt="ISBN"
+                    className="h-8 sm:h-10 w-auto object-contain"
+                  />
+                  <p className="text-gray-400 text-xs font-medium">978-93-5592-487-2</p>
+                </div>
               </div>
             </div>
 

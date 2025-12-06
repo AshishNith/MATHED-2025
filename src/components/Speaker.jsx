@@ -46,9 +46,9 @@ const speakers = [
   },
   {
     id: 5,
-    name: 'Dr. R.K. Bhardwaj',
-    title: 'Group Head',
-    university: 'MD&EG, DEAL, DRDO',
+    name: 'Dr. Rakesh Kumar Bhardwaj',
+    title: 'Scientist: G & Group Head ( MD&EG)',
+    university: 'DRDO',
     image: RKBhardwaj,
     websiteLink:"https://www.linkedin.com/in/dr-rakesh-bhardwaj-44b1a017/?originalSubdomain=in",
     info:"Micro and nano fabrication of electromechanical systems for defence applications"
@@ -59,51 +59,81 @@ const speakers = [
 
 const Speaker = () => {
   return (
-    <section className="relative min-h-screen py-16">
+    <section className="relative min-h-screen py-20 bg-gradient-to-b from-white via-amber-50/30 to-white">
       <div className="absolute inset-0 bg-white"></div>
-      <div className="absolute inset-0 opacity-30" style={{backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(217,119,6,0.15) 2px, transparent 0)', backgroundSize: '24px 24px'}}></div>
+      <div className="absolute inset-0 opacity-20" style={{backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(217,119,6,0.15) 2px, transparent 0)', backgroundSize: '32px 32px'}}></div>
+      
       <div className="relative container mx-auto px-4 max-w-7xl">
-        <motion.div initial={{opacity: 0, y: -20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.8}} className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-amber-600 mb-6">Keynote Speaker</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mx-auto mb-8"></div>
+        <motion.div 
+          initial={{opacity: 0, y: -20}} 
+          animate={{opacity: 1, y: 0}} 
+          transition={{duration: 0.8}} 
+          className="text-center mb-20"
+        >
+          <h2 className="text-6xl font-bold bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 bg-clip-text text-transparent mb-4">
+            Keynote Speakers
+          </h2>
+          <p className="text-gray-600 text-lg mb-6">Distinguished experts sharing their insights</p>
+          <div className="w-40 h-1.5 bg-gradient-to-r from-amber-600 via-amber-400 to-amber-600 mx-auto rounded-full shadow-lg shadow-amber-500/30"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
-          {speakers.map((speaker) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          {speakers.map((speaker, index) => (
             <motion.div 
               key={speaker.id}
-              initial={{opacity: 0, y: 20}}
+              initial={{opacity: 0, y: 30}}
               whileInView={{opacity: 1, y: 0}}
               viewport={{ once: true }}
-              transition={{duration: 0.5}}
-              className="w-full max-w-sm bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl overflow-hidden shadow-2xl"
+              transition={{duration: 0.6, delay: index * 0.1}}
+              whileHover={{ y: -8 }}
+              className="w-full max-w-sm group"
             >
-              <div className="relative h-72 md:h-80 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-amber-600/20 mix-blend-overlay z-10"></div>
-                <img 
-                  src={speaker.image} 
-                  alt={speaker.name}
-                  className="w-full h-full object-contain object-center hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-amber-800 mb-2">{speaker.name}</h3>
-                <div className="w-16 h-1 bg-gradient-to-r from-amber-600 to-amber-400 mb-4"></div>
-                <p className="text-lg text-amber-700 mb-1">{speaker.title}</p>
-                <p className="text-md text-amber-600">{speaker.university}</p>
-                <p className="mt-4 text-amber-700/80 leading-relaxed text-sm">
-                  {speaker.info}
+              <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-amber-100 hover:border-amber-300">
+                {/* Image Container */}
+                <div className="relative h-80 overflow-hidden bg-gradient-to-br from-amber-50 to-amber-100">
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-400/10 to-amber-600/10 z-10"></div>
+                  <div className="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold z-20 shadow-lg">
+                    Keynote
+                  </div>
+                  <img 
+                    src={speaker.image} 
+                    alt={speaker.name}
+                    className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
+                  />
+                </div>
+
+                {/* Content Container */}
+                <div className="p-7 bg-gradient-to-br from-white to-amber-50/50">
+                  <div className="mb-4">
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-amber-600 transition-colors duration-300">
+                      {speaker.name}
+                    </h3>
+                    <div className="w-12 h-1 bg-gradient-to-r from-amber-600 to-amber-400 rounded-full mb-3"></div>
+                  </div>
+
+                  <div className="space-y-2 mb-4">
+                    <p className="text-base font-semibold text-amber-700">{speaker.title}</p>
+                    <p className="text-sm text-gray-600 leading-relaxed">{speaker.university}</p>
+                  </div>
+
+                  <p className="text-sm text-gray-700 leading-relaxed mb-5 line-clamp-4">
+                    {speaker.info}
                   </p>
-                {speaker.websiteLink && (
-                  <a 
-                    href={speaker.websiteLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-block text-amber-700 hover:text-amber-900 text-sm underline"
-                  >
-                    View Profile
-                  </a>
-                )}
+
+                  {speaker.websiteLink && (
+                    <a 
+                      href={speaker.websiteLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-amber-600 to-amber-500 text-white rounded-lg font-medium text-sm hover:from-amber-700 hover:to-amber-600 transition-all duration-300 shadow-md hover:shadow-lg group/button"
+                    >
+                      View Profile
+                      <svg className="w-4 h-4 group-hover/button:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

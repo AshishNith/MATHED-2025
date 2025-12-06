@@ -7,17 +7,21 @@ const Sponsors = () => {
       tier: "Platinum Sponsors",
       sponsors: [
         {
-          name: "Sh. Shashikant Thakur, Branch Head, Branch -B SBI Life Hamirpur (HP) Mob.98050-35500",
+          name: "DRDO",
+          details: "Defence Research and Development Organisation - Premier R&D organization of India working in defense technologies",
+          websiteLink: "https://www.drdo.gov.in/",
           logo: (
             <img
-              src="https://mir-s3-cdn-cf.behance.net/projects/404/064230224725583.6810766ed08f6.png"
-              alt="SBI Life Logo"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbrPq3zqbeJa-_JTW9tPU8bmMsr_VKQtnDw&s"
+              alt="DRDO_logo"
               className="max-h-32 max-w-full object-contain"
             />
           )
         },
         {
-          name: "Janatics ",
+          name: "Janatics",
+          details: "Global leader in industrial automation and pneumatic solutions",
+          websiteLink: "https://www.janatics.com/",
           logo: (
             <img
               src="http://www.janatics.com/public/web/img/janatics_new.png"
@@ -26,6 +30,20 @@ const Sponsors = () => {
             />
           )
         },
+        {
+          name: "SBI Life",
+          details: "Sh. Shashikant Thakur, Branch Head, Branch-B SBI Life Hamirpur (HP)",
+          contact: "Mob: 98050-35500",
+          websiteLink: "https://www.sbilife.co.in/",
+          logo: (
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/projects/404/064230224725583.6810766ed08f6.png"
+              alt="SBI Life Logo"
+              className="max-h-32 max-w-full object-contain"
+            />
+          )
+        },
+        
         // { name: "Sponsor Name 1", logo: "Logo 1" },
         // { name: "Sponsor Name 2", logo: "Logo 2" }
       ]
@@ -81,13 +99,37 @@ const Sponsors = () => {
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.02 }}
-                    className="p-6 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border border-amber-200 backdrop-blur-sm hover:from-amber-100 hover:to-amber-200 transition-all duration-300"
+                    className="p-6 rounded-xl bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-200 backdrop-blur-sm hover:border-amber-400 hover:shadow-xl transition-all duration-300 flex flex-col"
                   >
-                    <div className="h-48 bg-white rounded-lg mb-4 flex items-center justify-center text-gray-400">
+                    <div className="h-40 bg-white rounded-lg mb-6 flex items-center justify-center p-4 shadow-inner">
                       {sponsor.logo}
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-800">{sponsor.name}</h3>
-                    {/* <p className="text-amber-600 mt-2">{tier.tier.slice(0, -1)}</p> */}
+                    <div className="space-y-3 flex-grow flex flex-col">
+                      <h3 className="text-2xl font-bold text-amber-800 border-b-2 border-amber-300 pb-2">
+                        {sponsor.name}
+                      </h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        {sponsor.details}
+                      </p>
+                      {sponsor.contact && (
+                        <p className="text-amber-600 font-semibold text-sm">
+                          {sponsor.contact}
+                        </p>
+                      )}
+                      {sponsor.websiteLink && (
+                        <a 
+                          href={sponsor.websiteLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-500 text-white rounded-lg font-medium text-sm hover:from-amber-700 hover:to-amber-600 transition-all duration-300 shadow-md hover:shadow-lg group self-start mt-auto"
+                        >
+                          Visit Website
+                          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+                      )}
+                    </div>
                   </motion.div>
                 ))}
               </div>
