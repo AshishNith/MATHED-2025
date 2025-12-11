@@ -43,6 +43,19 @@ const Sponsors = () => {
             />
           )
         },
+        {
+          name: "Infinipoint Technologies",
+          details: "Empowering business with cutting-edge technology solutions",
+          contact: "",
+          websiteLink: "https://www.infinipoint.ai/",
+          logo: (
+            <img
+              src="https://www.infinipoint.ai/logo/new-logo.png"
+              alt="infinipointLogo"
+              className="max-h-32 max-w-full object-contain"
+            />
+          )
+        },
         
         // { name: "Sponsor Name 1", logo: "Logo 1" },
         // { name: "Sponsor Name 2", logo: "Logo 2" }
