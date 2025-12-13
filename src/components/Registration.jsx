@@ -138,6 +138,8 @@ const Registration = () => {
                 </p>
               </div>
 
+              
+
               <p className='text-gray-600'>
                 Following the acceptance of the full-text paper, participants are required to pay the
                 non-refundable registration fee through SBI Collect.
@@ -150,10 +152,30 @@ const Registration = () => {
                 <li>Download or print the e-receipt for records.</li>
               </ul>
             </div>
+            
             <div className="w-48 h-48 bg-gradient-to-br from-white to-gray-100 p-3 rounded-lg shadow-lg flex-shrink-0 self-center">
               <img src={qrImage} alt="SBI Collect QR Code" className="w-full h-full object-contain" />
             </div>
+
+            
           </div>
+          <div className="bg-white mt-10 p-4 rounded-lg border border-amber-200 mb-6">
+                <h3 className="text-lg font-semibold text-amber-600 mb-3">Complete Your Registration</h3>
+                <p className="text-gray-600 mb-4">
+                  After making the payment, please fill out the registration form to complete your registration process.
+                </p>
+                <a 
+                  href="https://docs.google.com/forms/d/1kGOTjRIf-Tk9MSe0OtG9SWJwkHjtLE7iN9konWwjvWU/viewform?edit_requested=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-amber-600 to-amber-500 text-white rounded-lg font-medium text-sm hover:from-amber-700 hover:to-amber-600 transition-all duration-300 shadow-md hover:shadow-lg"
+                >
+                  Fill Registration Form
+                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
         </motion.section>
 
         {/* Fee Structure */}
