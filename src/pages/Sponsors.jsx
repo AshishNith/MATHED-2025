@@ -63,7 +63,7 @@ const Sponsors = () => {
           websiteLink: "https://in.mathworks.com/",
           logo: (
             <img
-              src="/src/assets/mathed.png"
+              src="https://res.cloudinary.com/dmhabztbf/image/upload/v1766065648/mathed_syo9up.png"
               alt="MATHED Logo"
               className="max-h-32 max-w-full object-contain"
             />
@@ -76,7 +76,7 @@ const Sponsors = () => {
           websiteLink: "https://www.bis.gov.in/?lang=en",
           logo: (
             <img
-              src="/src/assets/Bis.png"
+              src="https://res.cloudinary.com/dmhabztbf/image/upload/v1766065647/Bis_kd8z9y.png"
               alt="BIS Logo"
               className="max-h-32 max-w-full object-contain"
             />
