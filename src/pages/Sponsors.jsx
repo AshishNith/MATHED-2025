@@ -56,6 +56,19 @@ const Sponsors = () => {
             />
           )
         },
+        {
+          name: "MathWorks",
+          details: "Leading developer of mathematical computing software for engineers and scientists",
+          contact: "",
+          websiteLink: "https://in.mathworks.com/",
+          logo: (
+            <img
+              src="/src/assets/mathed.png"
+              alt="MATHED Logo"
+              className="max-h-32 max-w-full object-contain"
+            />
+          )
+        },
         
         // { name: "Sponsor Name 1", logo: "Logo 1" },
         // { name: "Sponsor Name 2", logo: "Logo 2" }
