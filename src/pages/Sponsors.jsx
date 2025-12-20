@@ -69,19 +69,19 @@ const Sponsors = () => {
             />
           )
         },
-        {
-          name: "Bureau of Indian Standards",
-          details: "National Standards Body of India responsible for the harmonious development of standardization, marking and quality certification",
-          contact: "",
-          websiteLink: "https://www.bis.gov.in/?lang=en",
-          logo: (
-            <img
-              src="https://res.cloudinary.com/dmhabztbf/image/upload/v1766065647/Bis_kd8z9y.png"
-              alt="BIS Logo"
-              className="max-h-32 max-w-full object-contain"
-            />
-          )
-        },
+        // {
+        //   name: "Bureau of Indian Standards",
+        //   details: "National Standards Body of India responsible for the harmonious development of standardization, marking and quality certification",
+        //   contact: "",
+        //   websiteLink: "https://www.bis.gov.in/?lang=en",
+        //   logo: (
+        //     <img
+        //       src="https://res.cloudinary.com/dmhabztbf/image/upload/v1766065647/Bis_kd8z9y.png"
+        //       alt="BIS Logo"
+        //       className="max-h-32 max-w-full object-contain"
+        //     />
+        //   )
+        // },
         
         // { name: "Sponsor Name 1", logo: "Logo 1" },
         // { name: "Sponsor Name 2", logo: "Logo 2" }
