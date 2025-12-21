@@ -69,6 +69,19 @@ const Sponsors = () => {
             />
           )
         },
+        {
+          name: "Perceivestar ",
+          details: "Hi-tech enterprise, engaged in R&D, Production and Sales of NDT & X ray accessories products",
+          contact: "",
+          websiteLink: "https://perceivestar.com/",
+          logo: (
+            <img
+              src="https://perceivestar.com/wp-content/uploads/2017/12/Untitled-1-1.png"
+              alt="Perceivestar Logo"
+              className="max-h-32 max-w-full object-contain"
+            />
+          )
+        },
         // {
         //   name: "Bureau of Indian Standards",
         //   details: "National Standards Body of India responsible for the harmonious development of standardization, marking and quality certification",
