@@ -82,6 +82,19 @@ const Sponsors = () => {
             />
           )
         },
+        {
+          name: "Adroitec Engineering",
+          details: "Engineering solutions and services provider",
+          contact: "",
+          websiteLink: "https://adroitecengg.com/",
+          logo: (
+            <img
+              src="https://adroitecengg.com//Encyc/2023/7/28/adroitec-logo.jpg"
+              alt="Adroitec Engineering Logo"
+              className="max-h-32 max-w-full object-contain"
+            />
+          )
+        },
         // {
         //   name: "Bureau of Indian Standards",
         //   details: "National Standards Body of India responsible for the harmonious development of standardization, marking and quality certification",
