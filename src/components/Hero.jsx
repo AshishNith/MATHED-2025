@@ -13,6 +13,15 @@ const Hero = () => {
     document.body.removeChild(link);
   };
 
+  const handleDownloadProceedings = () => {
+    const link = document.createElement('a');
+    link.href = '/MATHED -2025 ISBN Proceeding.pdf';
+    link.download = 'MATHED -2025 ISBN Proceeding.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div id='Hero' className="relative min-h-screen bg-gradient-to-br from-gray-900/90 to-black/90 bg-cover bg-center bg-no-repeat"
       style={{
@@ -74,19 +83,21 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center items-center">
-              <Link to="/register" className="w-full sm:w-auto">
-                <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-lg font-semibold text-white shadow-lg shadow-amber-500/25"
-                >
-                  Register Now
-                </motion.button>
-              </Link>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <motion.button
+                whileHover={{ scale: 1.02, boxShadow: '0 0 20px rgba(245, 158, 11, 0.4)' }}
+                whileTap={{ scale: 0.98 }}
+                onClick={handleDownloadProceedings}
+                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 rounded-xl font-bold text-slate-950 shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 cursor-pointer transition-all duration-300"
+              >
+                <svg className="w-5 h-5 stroke-slate-950" fill="none" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Download ISBN Proceedings
+              </motion.button>
               <button
                 onClick={handleDownloadBrochure}
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-amber-500/30 text-amber-400 rounded-lg font-semibold hover:bg-amber-500/10"
+                className="w-full sm:w-auto px-8 py-4 border border-amber-500/30 hover:border-amber-500/60 text-amber-400 rounded-xl font-bold hover:bg-amber-500/10 transition-all duration-300 cursor-pointer"
               >
                 Download brochure
               </button>
@@ -94,7 +105,7 @@ const Hero = () => {
 
             {/* Publishing Partners */}
             <div className="mt-4 sm:mt-6">
-              <p className="text-amber-400 text-sm sm:text-base font-semibold mb-3">Publishing Partners</p>
+              <p className="text-amber-400 text-sm sm:text-base font-semibold mb-3">Publishing Partners & ISBN</p>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 {/* Springer Logo Card */}
                 <div className="h-20 sm:h-24 w-48 sm:w-56 p-4 rounded-lg bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex items-center justify-center">
@@ -106,13 +117,20 @@ const Hero = () => {
                 </div>
 
                 {/* ISBN Card */}
-                <div className="h-20 sm:h-24 w-48 sm:w-56 p-4 rounded-lg bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex flex-col items-center justify-center gap-1">
+                <div 
+                  onClick={handleDownloadProceedings}
+                  className="h-20 sm:h-24 w-48 sm:w-56 p-4 rounded-lg bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border border-amber-500/20 backdrop-blur-sm flex flex-col items-center justify-center gap-1 cursor-pointer hover:border-amber-500/50 hover:bg-amber-500/20 transition-all duration-300 group"
+                  title="Click to download ISBN proceedings"
+                >
                   <img 
                     src="https://isbn.gov.in/assets/images/isbn.png"
                     alt="ISBN"
-                    className="h-8 sm:h-10 w-auto object-contain"
+                    className="h-8 sm:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   />
-                  <p className="text-gray-400 text-xs font-medium">978-93-5592-487-2</p>
+                  <p className="text-gray-400 text-xs font-semibold group-hover:text-amber-400 transition-colors">978-93-5592-487-2</p>
+                  <span className="text-[10px] text-amber-500 font-bold opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-y-1 group-hover:translate-y-0">
+                    Download PDF
+                  </span>
                 </div>
               </div>
             </div>

@@ -7,7 +7,8 @@ import Footer from './components/Footer'
 import Registration from './components/Registration'
 import Committee from './pages/Commitee'
 import Sponsors from './pages/Sponsors'
-import ImportantDatesPopup from './components/ImportantDatesPopup'
+import AnnouncementBanner from './components/AnnouncementBanner'
+import ProceedingsPopup from './components/ProceedingsPopup'
 
 const BackgroundPattern = () => (
   <div className="fixed inset-0 -z-10 bg-gray-50">
@@ -27,6 +28,7 @@ const App = () => {
     <BrowserRouter>
       <div className="min-h-screen relative text-gray-800">
         <BackgroundPattern />
+        <AnnouncementBanner />
         <Navbar />  
         <main className="container mx-auto relative z-10">
           <Routes>
@@ -41,7 +43,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
-        <ImportantDatesPopup />
+        <ProceedingsPopup />
       </div>
     </BrowserRouter>
   )
